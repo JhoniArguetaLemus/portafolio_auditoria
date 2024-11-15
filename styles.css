@@ -6,6 +6,12 @@
     font-family: sans-serif;
 
     --color-primario:#EC9544;
+    --color-azul: #1E3A8A;
+    --color-verde: #34D399;
+    --color-naranja: #F97316;
+    --color-gris: #9CA3AF;
+    --color-rojo: #EF4444;
+    --color-blanco: #FFFFFF;
 
 }
 
@@ -101,4 +107,14 @@ body{
         width: 60px;
     }
 
+}
+
+th{
+    background-color: var(--color-primario);
+}
+
+th, tr, td{
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
 }
