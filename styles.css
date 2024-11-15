@@ -72,3 +72,30 @@ body{
     border: 2px solid black;
 
 }
+
+@media screen and (max-width: 767px){
+    body .nav{
+       padding-left: 10px ;
+       padding-right: 10px;
+       border: 3px solid black;
+    }
+
+
+
+  .nav  .titulo{
+        font-size: 1rem;
+        border: 2px solid white;
+    }
+
+    .logo{
+        width: 60px;
+        border: 2px solid white;
+    }
+
+    .hamburguer{
+        margin-left: 1px ;
+        border: 2px solid white;
+        width: 60px;
+    }
+
+}
