@@ -10,7 +10,12 @@
 }
 
 body{
-    height: 2000px;
+    height: 1000px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    
 }
 
 .hamburguer {
@@ -37,7 +42,7 @@ body{
 
 .content {
     padding: 20px;
-    background-color: #eaeaea;
+    
 }
 
 .titulo{
@@ -63,9 +68,7 @@ body{
     visibility: visible;
 }
 
-.capitulo{
-    transition: .3s ease-in-out;
-}
+
 .capitulo:hover{
     background-color: white;
     color: black;
@@ -84,17 +87,17 @@ body{
 
   .nav  .titulo{
         font-size: 1rem;
-        border: 2px solid white;
+       
     }
 
     .logo{
         width: 60px;
-        border: 2px solid white;
+        
     }
 
     .hamburguer{
         margin-left: 1px ;
-        border: 2px solid white;
+        
         width: 60px;
     }
 
