@@ -21,19 +21,55 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('Imagenes/fondo.jpg');
     background-size: cover;
     background-position: center;
+   
+
+   
     
 }
 
 .hamburguer {
     position: sticky; 
 
-    z-index: 999; /* Asegura que esté encima de otros elementos */
-    top: 0; /* Se queda pegado en la parte superior */
+    z-index: 999; 
+    top: 0;
 
     padding: 10px; 
+   
+   
  
 }
 
+body .nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    padding-top: 50px;
+}
+
+.nav .logo{
+    width: 70px;
+    border: 2px solid red;
+    margin-bottom: 30px;
+}
+
+.nav .titulo{
+    margin-bottom: 30px;
+}
+main{
+    margin-top: 200px;
+}
+
+
+
+.hamburguer img{
+    box-shadow: 2px 2px 2px black;
+    padding: 6px;
+    border-radius: 5px;
+    width: 60px;
+    margin-left: 30px;
+
+}
 .menu {
     border: none; 
     
