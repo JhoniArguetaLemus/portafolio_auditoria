@@ -18,7 +18,8 @@
 body{
     height: 1000px;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('Imagenes/fondo.jpg');
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('Imagenes/fondo.jpg');
     background-size: cover;
     background-position: center;
    
@@ -45,6 +46,7 @@ body .nav{
     width: 100%;
     height: 90px;
     padding-top: 50px;
+    z-index: 999;
 }
 
 .nav .logo{
@@ -97,9 +99,11 @@ main{
     background-color: var(--color-primario);
     height: 100%;
     border-top: 3px solid black;
-     visibility: hidden;
+    visibility: hidden;
     position: absolute;
     width: 100%;
+    padding-top: 30px;
+    margin-top: -30px;
   
     
 }

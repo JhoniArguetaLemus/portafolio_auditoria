@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <script src="https://kit.fontawesome.com/597d9cf0ae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
  
     <title>Capitulo III</title>
@@ -32,48 +36,71 @@
         margin-right: auto;
       }
 
-      .seccion1 img{
+      .seccion1 im{
         transition: .3s ease-in-out;
       }
 
-      .seccion1 img:hover{
+      .seccion1 im:hover{
         transform: scale(1.2);
         margin-bottom: 100px;
         margin-top: 100px;
       }
+
+      .btn_mostrar_pdf{
+        background-color: #EC9544;
+      }
+
+      #divFrame1, #divFrame2, #divFrame3{
+        display: none;
+      }
+
+     
+      .carousel-item {
+            display: none;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
     </style>
   </head>
   <body>
-    <nav class="bg-[#EC9544] pt-[20px] pb-[20px] pl-[50px] pr-[100px] flex justify-between items-center ">
-       <div>
-           <img class="rounded-full hover:animate-spin" src="Imagenes/gas_logo.png" alt="" width="100px">
-       </div>
+    <nav class="nav bg-[#EC9544] pt-[20px] pb-[20px] pl-[50px] pr-[100px] flex justify-between items-center ">
+      <div>
+         <a href="index.html"> <img class=" logo rounded-full hover:animate-spin" src="Imagenes/gas_logo.png" alt="" width="100px"></a>
+      </div>
 
-       <div>
-             <h3 class="text-[2.2rem]"> Distribuidora de Gas Vigil</h3>
-       </div>
+      <div>
+            <h3 class="titulo text-[2.2rem] text-white"> Distribuidora de Gas Vigil</h3>
+      </div>
 
-       <div class="hamburguer">
-           <button class="menu animate-bounce" id="menu">
-            <img id="cilindro_menu" class="cilindro_menu" src="Imagenes/menu.png" alt="" width="80px">
-           </button>
-            
+      <div class="hamburguer">
+          <button class="menu animate-bounce" id="menu">
+           <img id="cilindro_menu" class="cilindro_menu" src="Imagenes/menu.png" alt="" width="80px">
+          </button>
+           
+      </div>
+     
+   </nav>
+
+
+   <section class="menu_opciones " id="menu_opciones">
+    <div class="mt-[0px]">
+      
+        
+       <div class="text-center">
+         <a href="CapituloI.html"><button class=" capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce   mt-[20px] hover:animate-bounce ">Capitulo I</button></a> 
+         <a href="CapituloII.html" target="_blank"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo II </button></a>
+         <a href="CapituloIII.html" target="_blank"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo III </button></a>
+         <a href="CapituloIV.html" target="_blank"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo IV </button></a>
+
        </div>
       
-    </nav>
+        
+    </div>
 
-    <section class="menu_opciones" id="menu_opciones">
-        <div class="mt-[50px]">
-           <p class="text-center text-[1.8rem]"> <a href="">Capitulo I</a></p>
-         
-           <p class="text-center text-[1.8rem]"> <a href="">Capitulo II</a></p>
-           <p class="text-center text-[1.8rem]"> <a href="">Capitulo III</a></p>
-           <p class="text-center text-[1.8rem]"> <a href="">Capitulo IV</a></p>
-            
-            
-        </div>
+</section>
 
-    </section>
 
 
     <main class="text-white">
@@ -88,366 +115,477 @@
        
         <h3>3.1 Definir el objetivo de auditoría a desarrollar</h3>
 
-        <h3>Objetivos</h3>
-        <h3>Objetivos general</h3>
-        <p>Evaluar y mejorar la gestion de la tecnologia de la informacion en “Distribuidora de gas Vigil” utilizando el marco COBIT, con el fin de garantizar que los procesos de TI soporten adecuadamente los objetivos estratégicos del negocio y cumplan con las normativas de seguridad y efieciencia operativa.</p>
+        
+    <div class="w-[100%] mx-auto text-white border-2 border-white rounded-lg mt-[50px]">
+      <div class=" shadow rounded-lg">
+          <div class="border-b">
+              <button class="w-full text-left py-4 px-6 focus:outline-none" onclick="toggleAccordion1('accordion-1')">
+                  <span class="font-semibold">Objetivo general</span>
+                  <svg class="w-5 h-5 inline-block float-right transition-transform duration-300" id="icon-accordion-1" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+              </button>
+              <div id="accordion-1" class="hidden px-6 pb-4">
+                <p>Evaluar y mejorar la gestion de la tecnologia de la informacion en “Distribuidora de gas Vigil” utilizando el marco COBIT, con el fin de garantizar que los procesos de TI soporten adecuadamente los objetivos estratégicos del negocio y cumplan con las normativas de seguridad y efieciencia operativa.</p>
   
-        <h3>
-          Objetivos especificos
-         </h3>
+              </div>
+          </div>
+          <div class="border-b">
+              <button class="w-full text-left py-4 px-6 focus:outline-none" onclick="toggleAccordion1('accordion-2')">
+                  <span class="font-semibold">Objetivos específicos</span>
+                  <svg class="w-5 h-5 inline-block float-right transition-transform duration-300" id="icon-accordion-2" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+              </button>
+              <div id="accordion-2" class="hidden px-6 pb-4">
+                 
+                <p>1.	Analizar los controles internos en los sistemas de gestión de inventarios y logística para asegurar que los datos de stock y distribución de cilindros de gas sean precisos y estén alineados con los procesos de negocio.</p>
+                <p>2.Evaluar el nivel de cumplimiento con las normativas de seguridad de la información y protección de datos personales, asegurando que los sistemas de TI cumplan con los requisitos legales y estándares de la industria para evitar posibles riesgos y sanciones.</p>
+                <p>3.	Asegurar que la gobernanza y la gestión de TI estén alineadas con las expectativas y prioridades de la Distribuidora de gas Vigil, creando valor a través del uso eficiente de la tecnología y equilibrando riesgos y beneficios.</p>
+                <p>4.	Integrar la gestión y el gobierno de TI en todos los niveles de la Distribuidora de gas Vigil, asegurando que todas las áreas y departamentos traten la información y la tecnología como activos estratégicos.</p>
+                <p>5.	Utilizar COBIT 5 como marco central para alinear todas las normativas, estándares y buenas prácticas en Distribuidora de gas Vigil, garantizando una gestión coherente y eficiente de TI.</p>
+                <p>6.	Desarrollar un sistema de gobierno de TI que considere todos los factores relevantes, desde los procesos y estructuras organizativas hasta la cultura y las competencias de la Distribuidora de gas Vigil.</p>
+       
+              </div>
+          </div>
 
-         <p>1.	Analizar los controles internos en los sistemas de gestión de inventarios y logística para asegurar que los datos de stock y distribución de cilindros de gas sean precisos y estén alineados con los procesos de negocio.</p>
-         <p>2.Evaluar el nivel de cumplimiento con las normativas de seguridad de la información y protección de datos personales, asegurando que los sistemas de TI cumplan con los requisitos legales y estándares de la industria para evitar posibles riesgos y sanciones.</p>
-         <p>3.	Asegurar que la gobernanza y la gestión de TI estén alineadas con las expectativas y prioridades de la Distribuidora de gas Vigil, creando valor a través del uso eficiente de la tecnología y equilibrando riesgos y beneficios.</p>
-         <p>4.	Integrar la gestión y el gobierno de TI en todos los niveles de la Distribuidora de gas Vigil, asegurando que todas las áreas y departamentos traten la información y la tecnología como activos estratégicos.</p>
-         <p>5.	Utilizar COBIT 5 como marco central para alinear todas las normativas, estándares y buenas prácticas en Distribuidora de gas Vigil, garantizando una gestión coherente y eficiente de TI.</p>
-         <p>6.	Desarrollar un sistema de gobierno de TI que considere todos los factores relevantes, desde los procesos y estructuras organizativas hasta la cultura y las competencias de la Distribuidora de gas Vigil.</p>
+         
+      </div>
+  </div>
 
+
+   
+       
+       
          <p>La evaluación de los procesos de la Unidad de TI de la empresa Distribuidora de Gas Vigil se llevará a cabo utilizando la metodología COBIT 5.0, un marco de gobernanza y gestión de TI que permite alinear los objetivos estratégicos de la organización con sus procesos tecnológicos. Este análisis tiene como finalidad identificar las áreas de mejora dentro de los procesos actuales de TI, con el fin de garantizar que estos se desarrollen de manera eficiente, cumpliendo con los estándares y buenas prácticas internacionales de gobernanza de TI.</p>
          <p>COBIT 5.0 proporciona un enfoque integral que permite evaluar cinco principios fundamentales: satisfacer las necesidades de las partes interesadas, cubrir la empresa de extremo a extremo, aplicar un marco único e integrado, habilitar un enfoque holístico y separar la gobernanza de la gestión. En este sentido, la revisión de los procesos en la Unidad de TI se realizará en función de estos principios, considerando no solo los aspectos técnicos, sino también la alineación de TI con el negocio, la maximización del valor de las inversiones en tecnología, la optimización de los recursos y la mitigación de riesgos.</p>
 
-         <h3>3.2 Definir el alcance de la auditoria a desarollar</h3>
-         <p>1.Áreas de TI a auditar: La auditoría se enfocará en los procesos de gestión de inventarios, sistemas de facturación, control de distribución y la seguridad de la información dentro del entorno tecnológico de "Distribuidora de gas Vigil".</p>
-         <p>2.	 Sistemas tecnológicos: Se evaluarán los sistemas de software utilizados para la gestión de inventarios, el control de la logística de distribución de cilindros de gas, y las plataformas de facturación y atención al cliente en el negocio “Distribuidora de gas Vigil”.</p>
-
-         <h3>3.3 Definir la metodología de Trabajo</h3>
-         <p>Cada semana nos reunimos cuatro días durante cuatro horas para realizar el proceso de auditoría del negocio Distribuidora de Gas Vigil. De esos cuatro días, dos los dedicamos a visitar el negocio con el objetivo de tomar encuestas, recopilar información clave sobre los procesos operativos y tecnológicos, y conocer de primera mano su funcionamiento. Los otros dos días nos reunimos en la Universidad, donde colaboramos en tiempo real en la redacción y revisión del informe, utilizando Microsoft Word. Cada miembro del equipo tiene un rol específico, ya sea en las visitas al negocio o en la elaboración del informe, garantizando que todos contribuyan de manera efectiva al proyecto.</p>
-         <h3>Metodología COBIT 5.0</h3>
-         <p>La metodología que se empleará en este análisis es COBIT 5.0, un marco integral de gobernanza y gestión de TI diseñado para alinear las estrategias y procesos tecnológicos con los objetivos empresariales. COBIT 5.0 se centra en cinco principios fundamentales que guían la implementación de un gobierno eficiente de TI: satisfacer las necesidades de las partes interesadas, cubrir la empresa de extremo a extremo, aplicar un marco único e integrado, permitir un enfoque holístico y separar la gobernanza de la gestión. Estos principios proporcionan una base sólida para evaluar los procesos de TI, identificar áreas de mejora y establecer controles adecuados.</p>
-
-         <p>El enfoque metodológico incluirá una revisión detallada de los procesos clave de la unidad de TI, con énfasis en los controles internos, la seguridad de la información y la eficiencia operativa. Para ello, se realizará una evaluación de madurez en relación con los procesos tecnológicos actuales, midiendo su alineación con las mejores prácticas recomendadas por COBIT 5.0. Además, se aplicarán las guías de procesos y dominios de COBIT, como la planificación y organización, la adquisición e implementación, la entrega y el soporte, y el monitoreo y evaluación.</p>
-         <p>La metodología se complementará con entrevistas a los responsables de TI, análisis de documentación interna y auditorías de procesos clave. Esto permitirá no solo identificar las debilidades y brechas en los procesos actuales, sino también proponer acciones correctivas basadas en las mejores prácticas de COBIT 5.0, garantizando que los objetivos estratégicos de la empresa estén alineados con un gobierno eficiente de TI que cumpla con las normativas y promueva la seguridad y eficiencia en las operaciones.</p>
-
-         <h3>3.4 Definir los recursos requeridos: personal, financiero y herramientas.</h3>
-         <p class="text-center">Recurso humano</p>
-         <p>El equipo encargado de llevar a cabo la evaluación y mejora de los procesos de TI en la Distribuidora de Gas Vigil está compuesto por los siguientes integrantes, cada uno con roles específicos para asegurar el éxito del proyecto:</p>
-
-        </div>
 
 
-        <div class="tablas"> 
 
-          <div class="mt-[30px]">
-            <table>
-              <th>Integrante</th>
-              <th>Rol</th>
-              <th>habilidades</th>
 
-              <tbody>
-                <tr>
-                  <td>José Jhonis Argueta Lemus</td>
-                  <td>Lider</td>
-                  <td>
-                    <ul>
-                      <li>Conocimientos de lenguajes de programación: C#, Python, PHP, Kotlin, Java, JavaScript.</li>
-                      <li>Configuración y administración de redes.</li>
-                      <li>Testing: Junit, PyTest, Selenium.</li>
-                      <li>	Virtualización: VirtualBox, VMware</li>
-                      <li>	Docker </li>
-                    </ul>
-                  </td>
-                </tr>
 
-                <tr>
-                  <td>Edin Ivan Saravia Vigil</td>
-                  <td>Colaborador</td>
-                  <td>
-                    <ul>
-                      <li>Conocimiento en mantenimiento y reparación de computadoras.</li>
-                      <li>Sistemas operativos Windows y Linux</li>
-                      <li>Administración de redes </li>
-                    </ul>
-                  </td>
-                </tr>
 
-                <tr>
-                  <td>Arnold David Villatoro Santos</td>
-                  <td>Colaborador</td>
-                  <td>
-                    <ul>
-                      <li>Diseño web y móvil</li>
-                      <li>Programación web: HTML, CSS, JavaScript</li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-           <p class="text-center">Materiales y herramientas</p>
         
-          <div class="mt-[30px]">
-            <table>
-              <th>Elemento</th>
-              <th>Descripción</th>
+       
+      
 
-              <tbody>
-                <tr>
-                  <td>Laptops (3)</td>
-                  <td>Tres computadoras portátiles, utilizadas para realizar la auditoría, el procesamiento de datos y demás tareas relacionadas.</td>
-                </tr>
 
-                <tr>
-                  <td>Internet</td>
-                  <td>Conexión a internet, necesaria para acceder a recursos en línea, herramientas de colaboración, y la documentación necesaria para el trabajo</td>
-                </tr>
+        <div class="w-[100%] mx-auto text-white border-2 border-white rounded-lg mt-[50px]">
+          <div class=" shadow rounded-lg">
+              <div class="border-b">
+                  <button class="w-full text-left py-4 px-6 focus:outline-none" onclick="toggleAccordion2('accordion-3')">
+                      <span class="font-semibold">3.2 Definir el alcance de la auditoria a desarollar</span>
+                      <svg class="w-5 h-5 inline-block float-right transition-transform duration-300" id="icon-accordion-3" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                  </button>
+                  <div id="accordion-3" class="hidden px-6 pb-4">
+                    <p>1.Áreas de TI a auditar: La auditoría se enfocará en los procesos de gestión de inventarios, sistemas de facturación, control de distribución y la seguridad de la información dentro del entorno tecnológico de "Distribuidora de gas Vigil".</p>
+                    <p>2.	 Sistemas tecnológicos: Se evaluarán los sistemas de software utilizados para la gestión de inventarios, el control de la logística de distribución de cilindros de gas, y las plataformas de facturación y atención al cliente en el negocio “Distribuidora de gas Vigil”.</p>
+           
+                  </div>
+              </div>
 
-                <tr>
-                  <td>Manual COBIT 5.0</td>
-                  <td>Documento que contiene las directrices y buenas prácticas del marco COBIT 5.0, utilizado para la gestión y el gobierno de TI.</td>
-                </tr>
-
-                <tr>
-                  <td>Catalizadores</td>
-                  <td>Factores que facilitan la implementación efectiva de procesos en el marco de COBIT 5.0, utilizado para la gestión y el gobierno de TI. </td>
+              <div class="border-b">
+                  <button class="w-full text-left py-4 px-6 focus:outline-none" onclick="toggleAccordion2('accordion-4')">
+                      <span class="font-semibold">3.3 Definir la metodología de Trabajo</span>
+                      <svg class="w-5 h-5 inline-block float-right transition-transform duration-300" id="icon-accordion-4" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                  </button>
+                  <div id="accordion-4" class="hidden px-6 pb-4">
+                    <p>Cada semana nos reunimos cuatro días durante cuatro horas para realizar el proceso de auditoría del negocio Distribuidora de Gas Vigil. De esos cuatro días, dos los dedicamos a visitar el negocio con el objetivo de tomar encuestas, recopilar información clave sobre los procesos operativos y tecnológicos, y conocer de primera mano su funcionamiento. Los otros dos días nos reunimos en la Universidad, donde colaboramos en tiempo real en la redacción y revisión del informe, utilizando Microsoft Word. Cada miembro del equipo tiene un rol específico, ya sea en las visitas al negocio o en la elaboración del informe, garantizando que todos contribuyan de manera efectiva al proyecto.</p>
+                    <h3>Metodología COBIT 5.0</h3>
+                    <p>La metodología que se empleará en este análisis es COBIT 5.0, un marco integral de gobernanza y gestión de TI diseñado para alinear las estrategias y procesos tecnológicos con los objetivos empresariales. COBIT 5.0 se centra en cinco principios fundamentales que guían la implementación de un gobierno eficiente de TI: satisfacer las necesidades de las partes interesadas, cubrir la empresa de extremo a extremo, aplicar un marco único e integrado, permitir un enfoque holístico y separar la gobernanza de la gestión. Estos principios proporcionan una base sólida para evaluar los procesos de TI, identificar áreas de mejora y establecer controles adecuados.</p>
+           
+                    <p>El enfoque metodológico incluirá una revisión detallada de los procesos clave de la unidad de TI, con énfasis en los controles internos, la seguridad de la información y la eficiencia operativa. Para ello, se realizará una evaluación de madurez en relación con los procesos tecnológicos actuales, midiendo su alineación con las mejores prácticas recomendadas por COBIT 5.0. Además, se aplicarán las guías de procesos y dominios de COBIT, como la planificación y organización, la adquisición e implementación, la entrega y el soporte, y el monitoreo y evaluación.</p>
+                    <p>La metodología se complementará con entrevistas a los responsables de TI, análisis de documentación interna y auditorías de procesos clave. Esto permitirá no solo identificar las debilidades y brechas en los procesos actuales, sino también proponer acciones correctivas basadas en las mejores prácticas de COBIT 5.0, garantizando que los objetivos estratégicos de la empresa estén alineados con un gobierno eficiente de TI que cumpla con las normativas y promueva la seguridad y eficiencia en las operaciones.</p>
+           
                   
-                </tr>
-
-                <tr>
-                  <td>Microsoft Word</td>
-                  <td>Software de procesamiento de textos, utilizado para la creación y edición de documentos, reportes y manuales. </td>
-                </tr>
-                <tr>
-                  <td>Samsung Galaxy S20FE</td>
-                  <td>Teléfono inteligente utilizado para comunicación, acceso a aplicaciones de trabajo</td>
-
-                </tr>
-
-                <tr>
-                  <td>Xiomi Redmi 13 pro</td>
-                  <td>Otro teléfono inteligente con características avanzadas para gestionar tareas de trabajo y comunicación móvil. </td>
-                </tr>
-
-                <tr>
-                  <td>iPhone 13</td>
-                  <td>Dispositivo de Apple con acceso a herramientas de productividad comunicación, usado paras fines similares a los otros smartphones. </td>
-
-                </tr>
-              </tbody>
+                  </div>
+              </div>
 
 
-            </table>
+
+              <div class="border-b">
+                <button class="w-full text-left py-4 px-6 focus:outline-none" onclick="toggleAccordion2('accordion-5')">
+                    <span class="font-semibold">3.4 Definir los recursos requeridos: personal, financiero y herramientas.</span>
+                    <svg class="w-5 h-5 inline-block float-right transition-transform duration-300" id="icon-accordion-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="accordion-5" class="hidden px-6 pb-4">
+
+                  <p class="text-center">Recurso humano</p>
+                  <p>El equipo encargado de llevar a cabo la evaluación y mejora de los procesos de TI en la Distribuidora de Gas Vigil está compuesto por los siguientes integrantes, cada uno con roles específicos para asegurar el éxito del proyecto:</p>
+                  <table>
+                    <th>Integrante</th>
+                    <th>Rol</th>
+                    <th>habilidades</th>
+      
+                    <tbody>
+                      <tr>
+                        <td>José Jhonis Argueta Lemus</td>
+                        <td>Lider</td>
+                        <td>
+                          <ul>
+                            <li>Conocimientos de lenguajes de programación: C#, Python, PHP, Kotlin, Java, JavaScript.</li>
+                            <li>Configuración y administración de redes.</li>
+                            <li>Testing: Junit, PyTest, Selenium.</li>
+                            <li>	Virtualización: VirtualBox, VMware</li>
+                            <li>	Docker </li>
+                          </ul>
+                        </td>
+                      </tr>
+      
+                      <tr>
+                        <td>Edin Ivan Saravia Vigil</td>
+                        <td>Colaborador</td>
+                        <td>
+                          <ul>
+                            <li>Conocimiento en mantenimiento y reparación de computadoras.</li>
+                            <li>Sistemas operativos Windows y Linux</li>
+                            <li>Administración de redes </li>
+                          </ul>
+                        </td>
+                      </tr>
+      
+                      <tr>
+                        <td>Arnold David Villatoro Santos</td>
+                        <td>Colaborador</td>
+                        <td>
+                          <ul>
+                            <li>Diseño web y móvil</li>
+                            <li>Programación web: HTML, CSS, JavaScript</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <p class="text-center">Materiales y herramientas</p>
+                  <table>
+                    <th>Elemento</th>
+                    <th>Descripción</th>
+      
+                    <tbody>
+                      <tr>
+                        <td>Laptops (3)</td>
+                        <td>Tres computadoras portátiles, utilizadas para realizar la auditoría, el procesamiento de datos y demás tareas relacionadas.</td>
+                      </tr>
+      
+                      <tr>
+                        <td>Internet</td>
+                        <td>Conexión a internet, necesaria para acceder a recursos en línea, herramientas de colaboración, y la documentación necesaria para el trabajo</td>
+                      </tr>
+      
+                      <tr>
+                        <td>Manual COBIT 5.0</td>
+                        <td>Documento que contiene las directrices y buenas prácticas del marco COBIT 5.0, utilizado para la gestión y el gobierno de TI.</td>
+                      </tr>
+      
+                      <tr>
+                        <td>Catalizadores</td>
+                        <td>Factores que facilitan la implementación efectiva de procesos en el marco de COBIT 5.0, utilizado para la gestión y el gobierno de TI. </td>
+                        
+                      </tr>
+      
+                      <tr>
+                        <td>Microsoft Word</td>
+                        <td>Software de procesamiento de textos, utilizado para la creación y edición de documentos, reportes y manuales. </td>
+                      </tr>
+                      <tr>
+                        <td>Samsung Galaxy S20FE</td>
+                        <td>Teléfono inteligente utilizado para comunicación, acceso a aplicaciones de trabajo</td>
+      
+                      </tr>
+      
+                      <tr>
+                        <td>Xiomi Redmi 13 pro</td>
+                        <td>Otro teléfono inteligente con características avanzadas para gestionar tareas de trabajo y comunicación móvil. </td>
+                      </tr>
+      
+                      <tr>
+                        <td>iPhone 13</td>
+                        <td>Dispositivo de Apple con acceso a herramientas de productividad comunicación, usado paras fines similares a los otros smartphones. </td>
+      
+                      </tr>
+                    </tbody>
+      
+      
+                  </table>
+                
+
+                  <p class="text-center">Recurso financiero</p>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>Duración de la auditoría en semanas</td>
+                        <td>20</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Cantidad de auditores</td>
+                        <td>3</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Días a la semana</td>
+                        <td>4</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Horas por día</td>
+                        <td>4</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Total, horas a la semana por auditor</td>
+                        <td>16</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Costo por hora</td>
+                        <td>$20</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Total, por auditor semanal </td>
+                        <td>$320</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Total, por tres auditores</td>
+                        <td>$960 a la semana</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Inversión total en 20 semanas</td>
+                        <td>$19, 200</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Internet semanala</td>
+                        <td>$15</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Total, en 20 semanas</td>
+                        <td>$300</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Transporte semanal</td>
+                        <td>$10 cada auditor</td>
+                      </tr>
+        
+                      <tr>
+                        <td>Alimentación por día</td>
+                        <td>$6; 6x3=18; 18x4=72</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <p class="mt-[30px] text-center">El costo de la auditoria que se está realizando con el equipo es de $19, 602</p>
+
+
+
+
+                </div>
+            </div>
+            
+            <div class="border-b">
+              <button class="w-full text-left py-4 px-6 focus:outline-none" onclick="toggleAccordion2('accordion-6')">
+                  <span class="font-semibold">3.5 Definir el tiempo requerido para su implemetación (cronograma de trabajo) </span>
+                  <svg class="w-5 h-5 inline-block float-right transition-transform duration-300" id="icon-accordion-6" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+              </button>
+              <div id="accordion-6" class="hidden px-6 pb-4">
+                <table class="w-[50%]">
+                  <tbody>
+                    <tr>
+                      <td>Semana 1 Motivo: Identificar empresa a auditor</td>
+                      <td>15 al 21 de julio de 2024<br>
+                        Identificar un prospecto de empresa con sistema informático que podría ser auditada 
+                        </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 2: entrevista</td>
+                      <td>Del 22 al 28 de julio <br>
+                        Se le realizo una entrevista al negocio para conocer sobre que tipos de auditoria realizan y otros datos de carácter general. 
+                        </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 3: auditoria a software de las computadoras de la empresa</td>
+                      <td>Del 29 al 11 de agosto <br>
+                        Se hiso uso de la herramienta Total Network Inventory la cual permite conocer que software tiene instalado una computadora así como su tipo de licencia. 
+                        </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 4: Reconociendo la empresa y aplicando COBIT 5.0</td>
+                      <td>Del 12 al 18 de agosto <br>
+                        Se realizo un reconocimiento de la empresa a auditar, nombre, dirección, naturaleza de la empresa, visión, misión, objetivos, etc. 
+                        </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 5: Leyes en materia de informática </td>
+                      <td>Del  19 al 25 de agosto <br>
+                        Se conocieron algunas leyes relacionadas con la informática como la Ley reguladora de la auditoria, la Ley de acceso a la información,  y el Reglamento para el control de las tecnologías de información y comunicación. 
+                        </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 6: presentación de capítulos I y II de la auditoría con COBIT 5.0 </td>
+      
+                      <td>Del 26 de agosto al 01 de septiembre <br>
+                        Se realizo presentación del avance de la auditoria concernientes al capítulo I y II
+                        </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 7: Como integrar y adoptar los estándares para integrar un buen gobierno de TI</td>
+                      <td>Del 02 al 08 de septiembre de 2024 <br>
+                        Se conoció como se pueden integrar otros estándares como la metologia SCRUM para el desarrollo de software, la metodología PMBOK para la gestión de proyectos, las normas ISO para cumplir los estándares, entre otros. 
+                        </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 8: Identificando necesidades de la empresa a auditar </td>
+                      <td>Se realizó una encuesta con 22 preguntas sugeridas por el marco COBIT 5.0 para conocer las necesidades de la empresa. </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 9: Mapeo de datos</td>
+                      <td>Se realizo el mapeo de datos para identificar necesidades internas, a partir de los datos recolectados con la encuesta.  </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 10: Refinando la cascada de metas</td>
+                      <td>Revisión del documento
+                        completo que incluye toda la documentación desde el punto 3.1 del
+                        capítulo III hasta el punto 3.6 que es la identificación de los procesos
+                        habilitantes.
+                        </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 11: Evaluación de procesos</td>
+                      <td>Cada equipo de trabajo  realizando la
+                        evaluación de procesos, usando 
+                        <br>Plantilla evaluación de procesos.
+                        <br>Procesos catalizadores guía de auditoría de
+                        procesos.
+                      <br> Mapeo de necesidades elaborada en las semanas anteriores de este respectivo cómputo II.
+                        </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 12: Evaluación de procesos</td>
+                      <td>Se realizo la revision de la evaluación de procesos</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 13</td>
+                      <td>Examenes parciales </td>
+                    </tr>
+                    <tr>
+                      <td>Semana 14: Propuesta del plan de mejora </td>
+                      <td>Se Trabajo en el plan de mejora</td>
+                    </tr>
+      
+                    <tr>
+      
+                      <td>Semana 15: Propuesta del plan de mejora, continuación</td>
+                      <td>Se siguio trabajano en el plan de mejora </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 16:  Propuesta del Plan de Mejora, continuación...</td>
+                      <td>Se identificaron las entradas y salidas del proceso. </td>
+                    </tr>
+      
+                    <tr>
+                      <td>Semana 17: Políticas del Plan de Mejora</td>
+                      <td>Se crearon políticas para dar respuetas a los riesgos identificados. </td>
+                    </tr>
+                  </tbody>
+                  
+                </table>
+      
+              
+              </div>
           </div>
 
 
-        </div>
 
-
-        <p class="text-center">Recurso financiero</p>
-
-        <div class="mt-[30px]">
-          <table>
-            <tbody>
-              <tr>
-                <td>Duración de la auditoría en semanas</td>
-                <td>20</td>
-              </tr>
-
-              <tr>
-                <td>Cantidad de auditores</td>
-                <td>3</td>
-              </tr>
-
-              <tr>
-                <td>Días a la semana</td>
-                <td>4</td>
-              </tr>
-
-              <tr>
-                <td>Horas por día</td>
-                <td>4</td>
-              </tr>
-
-              <tr>
-                <td>Total, horas a la semana por auditor</td>
-                <td>16</td>
-              </tr>
-
-              <tr>
-                <td>Costo por hora</td>
-                <td>$20</td>
-              </tr>
-
-              <tr>
-                <td>Total, por auditor semanal </td>
-                <td>$320</td>
-              </tr>
-
-              <tr>
-                <td>Total, por tres auditores</td>
-                <td>$960 a la semana</td>
-              </tr>
-
-              <tr>
-                <td>Inversión total en 20 semanas</td>
-                <td>$19, 200</td>
-              </tr>
-
-              <tr>
-                <td>Internet semanala</td>
-                <td>$15</td>
-              </tr>
-
-              <tr>
-                <td>Total, en 20 semanas</td>
-                <td>$300</td>
-              </tr>
-
-              <tr>
-                <td>Transporte semanal</td>
-                <td>$10 cada auditor</td>
-              </tr>
-
-              <tr>
-                <td>Alimentación por día</td>
-                <td>$6; 6x3=18; 18x4=72</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <p class="mt-[30px] text-center">El costo de la auditoria que se está realizando con el equipo es de $19, 602</p>
-        </div>
+    
+          </div>
+      </div>
 
 
 
-        <div>
-          <h3>3.5 Definir el tiempo requerido para su implemetación (cronograma de trabajo)  </h3>
-        </div>
 
-        <div class="mt-[40px]">
-          <table class="w-[50%]">
-            <tbody>
-              <tr>
-                <td>Semana 1 Motivo: Identificar empresa a auditor</td>
-                <td>15 al 21 de julio de 2024<br>
-                  Identificar un prospecto de empresa con sistema informático que podría ser auditada 
-                  </td>
-              </tr>
 
-              <tr>
-                <td>Semana 2: entrevista</td>
-                <td>Del 22 al 28 de julio <br>
-                  Se le realizo una entrevista al negocio para conocer sobre que tipos de auditoria realizan y otros datos de carácter general. 
-                  </td>
-              </tr>
 
-              <tr>
-                <td>Semana 3: auditoria a software de las computadoras de la empresa</td>
-                <td>Del 29 al 11 de agosto <br>
-                  Se hiso uso de la herramienta Total Network Inventory la cual permite conocer que software tiene instalado una computadora así como su tipo de licencia. 
-                  </td>
-              </tr>
-
-              <tr>
-                <td>Semana 4: Reconociendo la empresa y aplicando COBIT 5.0</td>
-                <td>Del 12 al 18 de agosto <br>
-                  Se realizo un reconocimiento de la empresa a auditar, nombre, dirección, naturaleza de la empresa, visión, misión, objetivos, etc. 
-                  </td>
-              </tr>
-
-              <tr>
-                <td>Semana 5: Leyes en materia de informática </td>
-                <td>Del  19 al 25 de agosto <br>
-                  Se conocieron algunas leyes relacionadas con la informática como la Ley reguladora de la auditoria, la Ley de acceso a la información,  y el Reglamento para el control de las tecnologías de información y comunicación. 
-                  </td>
-              </tr>
-
-              <tr>
-                <td>Semana 6: presentación de capítulos I y II de la auditoría con COBIT 5.0 </td>
-
-                <td>Del 26 de agosto al 01 de septiembre <br>
-                  Se realizo presentación del avance de la auditoria concernientes al capítulo I y II
-                  </td>
-              </tr>
-
-              <tr>
-                <td>Semana 7: Como integrar y adoptar los estándares para integrar un buen gobierno de TI</td>
-                <td>Del 02 al 08 de septiembre de 2024 <br>
-                  Se conoció como se pueden integrar otros estándares como la metologia SCRUM para el desarrollo de software, la metodología PMBOK para la gestión de proyectos, las normas ISO para cumplir los estándares, entre otros. 
-                  </td>
-              </tr>
-
-              <tr>
-                <td>Semana 8: Identificando necesidades de la empresa a auditar </td>
-                <td>Se realizó una encuesta con 22 preguntas sugeridas por el marco COBIT 5.0 para conocer las necesidades de la empresa. </td>
-              </tr>
-
-              <tr>
-                <td>Semana 9: Mapeo de datos</td>
-                <td>Se realizo el mapeo de datos para identificar necesidades internas, a partir de los datos recolectados con la encuesta.  </td>
-              </tr>
-
-              <tr>
-                <td>Semana 10: Refinando la cascada de metas</td>
-                <td>Revisión del documento
-                  completo que incluye toda la documentación desde el punto 3.1 del
-                  capítulo III hasta el punto 3.6 que es la identificación de los procesos
-                  habilitantes.
-                  </td>
-              </tr>
-
-              <tr>
-                <td>Semana 11: Evaluación de procesos</td>
-                <td>Cada equipo de trabajo  realizando la
-                  evaluación de procesos, usando 
-                  <br>Plantilla evaluación de procesos.
-                  <br>Procesos catalizadores guía de auditoría de
-                  procesos.
-                <br> Mapeo de necesidades elaborada en las semanas anteriores de este respectivo cómputo II.
-                  </td>
-              </tr>
-
-              <tr>
-                <td>Semana 12: Evaluación de procesos</td>
-                <td>Se realizo la revision de la evaluación de procesos</td>
-              </tr>
-
-              <tr>
-                <td>Semana 13</td>
-                <td>Examenes parciales </td>
-              </tr>
-              <tr>
-                <td>Semana 14: Propuesta del plan de mejora </td>
-                <td>Se Trabajo en el plan de mejora</td>
-              </tr>
-
-              <tr>
-
-                <td>Semana 15: Propuesta del plan de mejora, continuación</td>
-                <td>Se siguio trabajano en el plan de mejora </td>
-              </tr>
-
-              <tr>
-                <td>Semana 16:  Propuesta del Plan de Mejora, continuación...</td>
-                <td>Se identificaron las entradas y salidas del proceso. </td>
-              </tr>
-
-              <tr>
-                <td>Semana 17: Políticas del Plan de Mejora</td>
-                <td>Se crearon políticas para dar respuetas a los riesgos identificados. </td>
-              </tr>
-            </tbody>
-            
-          </table>
-        </div>
 
 
         <div class="flex flex-col items-center">
           <h3 class="text-center">3.6 Identificando las necesidades de las partes interesadas de la empresa Distribuidora de gas Vigil.</h3>
            <p>Graficas más relevantes</p>
-           <img class="rounded-lg mt-[20px]" src="Imagenes/grafica1.png" alt="grafica1" width="800px">
-           <img class="rounded-lg mt-[20px]" src="Imagenes/grafica2.png" alt="grafica1" width="800px">
-           <img class="rounded-lg mt-[20px]" src="Imagenes/grafica3.png" alt="grafica1" width="800px">
-           <img class="rounded-lg mt-[20px]" src="Imagenes/grafica4.png" alt="grafica1" width="800px">
-           <img class="rounded-lg mt-[20px]" src="Imagenes/grafica5.png" alt="grafica1" width="800px">
-           <img class="rounded-lg mt-[20px]" src="Imagenes/grafica6.png" alt="grafica1" width="800px">
+
+           <div class=" mx-auto mt-10 w-[70%] p-[10px] ">
+            <div class="relative">
+                <div id="carousel" class="carousel">
+                    <div class="carousel-item active">
+                        <img src="Imagenes/grafica1.png" alt="Imagen 1" class="w-full rounded-lg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/grafica2.png" alt="Imagen 2" class="w-full rounded-lg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/grafica3.png" alt="Imagen 3" class="w-full rounded-lg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/grafica4.png" alt="Imagen 4" class="w-full rounded-lg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/grafica5.png" alt="Imagen 5" class="w-full rounded-lg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/grafica6.png" alt="Imagen 6" class="w-full rounded-lg">
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="Imagenes/grafica7.png" alt="Imagen 6" class="w-full rounded-lg">
+                  </div>
+                </div>
+                <!-- Controles -->
+                <button id="prev" class="p-[10px] border-2 border-black m-[10px]    absolute top-1/2 left-0 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-200">
+                  <i class="fa-solid fa-arrow-left text-black"></i>
+                </button>
+                <button id="next" class="border-2 border-black m-[10px]   p-[10px] absolute top-1/2 right-0 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-200">
+                  <i class="fa-solid fa-arrow-right text-black"></i>
+                </button>
+            </div>
+        </div>
 
         </div>
 
-        <div class="">
+        <div class="analisis">
           <h3>3.6.1 ¿Cómo hacer el análisis de las necesidades de las partes interesadas?</h3>
+          <div class="text-center mt-[50px]">
+            <button class="animate-bounce     btn_mostrar_pdf border-2 border-white p-[10px] w-[200px] rounded-lg" id="mostrar_pdf1" >Ver PDF <i class="fa-regular fa-eye pl-[20px] text-[1.1rem]"></i></button>
 
-          <div class=" flex flex-col items-center mt-[40px]">
+          </div>
+         
+
+          <div class=" flex flex-col items-center mt-[40px] pdf1" id="divFrame1" >
             <iframe class=" rounded-lg w-[80%] h-[500px]" src="Imagenes/MAPEO DE METAS.pdf" allowfullscreen></iframe>
       
           </div>
@@ -530,17 +668,96 @@
           <div class="w-[50%] mx-auto">
             <h3 class="">3.7 Relacionando las necesidades de las partes interesadas de empresa Distribuidora de Gas Vigil con las metas de negocio.</h3>
 
+          </div>
+
+          <div class="text-center mt-[50px]">
+            <button class="animate-bounce     btn_mostrar_pdf border-2 border-white p-[10px] w-[200px] rounded-lg" id="mostrar_pdf2" >Ver PDF <i class="fa-regular fa-eye pl-[20px] text-[1.1rem]"></i></button>
 
           </div>
         
-          <div class=" flex flex-col items-center mt-[40px]">
+          <div class=" flex flex-col items-center mt-[40px] mb-[100px]" id="divFrame2">
             <iframe class=" rounded-lg w-[80%] h-[500px]" src="Imagenes/MAPEO DE METAS2.pdf" allowfullscreen></iframe>
       
+          </div>
+
+          <div class="text-center mt-[50px]">
+            <table class="w-[80%]">
+              <th>Metas corporativas con mayor valor</th>
+              <th>Puntaje</th>
+              <tbody>
+                <tr>
+                  <td>1. Valor para las partes interesadas de las Inversiones de Negocio</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>8. Respuestas ágiles a un entorno de negocio cambiante</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>9. Toma estratégica de Decisiones basada en Información</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>11. Optimización de la funcionalidad de los procesos de negocio</td>
+                  <td>30</td>
+                </tr>
+
+                <tr>
+                  <td>15. Cumplimiento con las políticas internas</td>
+                  <td>26</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="w-[80%] mx-auto mt-[5px]"">Tabla 2: Necesidades de las partes interesadas con metas corporativas de la empresa Distribuidora de gas Vigil. </p>
           </div>
         </div>
 
       </section>
 
+
+      <section>
+        <h3>3.8 Obteniendo las metas TI para la empresa Distribuidora de gas Saravia</h3>
+        <p class="w-[58%] mx-auto mt-[20px]">A partir del mapeo realizado con cinco metas organizacionales se ha podido
+          identificar tres metas de TI. Además, cada una de ellas fue validada con la Unidad de Tecnología
+          para ajustarse al modelo de la empresa. 
+        </p>
+
+        <div class="text-center mt-[50px]">
+          <button class="animate-bounce     btn_mostrar_pdf border-2 border-white p-[10px] w-[200px] rounded-lg" id="mostrar_pdf3" >Ver PDF <i class="fa-regular fa-eye pl-[20px] text-[1.1rem]"></i></button>
+
+        </div>
+       
+
+        <div class=" flex flex-col items-center mt-[40px] pdf1" id="divFrame3" >
+          <iframe class=" rounded-lg w-[80%] h-[500px]" src="Imagenes/MAPEO DE METAS3.pdf" allowfullscreen></iframe>
+    
+        </div>
+
+        <div class=" mt-[40px]">
+          <table class="w-[80%] mx-auto">
+            <th>Metas de TI encontradas</th>
+            <th>Puntaje</th>
+            <tbody>
+              <tr>
+                <td>1.	Alineamiento de TI y la estrategia de negocio.</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>8. Uso adecuado de aplicaciones, información y soluciones tecnológica.</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>17. Conocimiento, experiencia e iniciativas para la innovación del negocio.</td>
+                <td>25</td>
+              </tr>
+             
+            </tbody>
+          </table>
+
+          <p class="w-[80%] mx-auto mt-[5px]">Tabla 3: Metas de TI encontradas en la empresa Distribuidora de gas Vigil.</p>
+        </div>
+      </section>
 
 
     </main>
@@ -549,7 +766,11 @@
 
 
     
-    <script src="app.js"></script>
+    <script src="app.js">
+
+    </script>
+
+
   </body>
 
   
