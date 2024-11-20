@@ -48,9 +48,10 @@
 
       .btn_mostrar_pdf{
         background-color: #EC9544;
+      
       }
 
-      #divFrame1, #divFrame2, #divFrame3{
+      #divFrame1, #divFrame2, #divFrame3, #divFrame4{
         display: none;
       }
 
@@ -62,10 +63,19 @@
         .carousel-item.active {
             display: block;
         }
+
+        .marco img:hover{
+          transform: scale(1.1);
+        }
+
+
+        .marco img{
+          transition: all .3s ease-in-out;
+        }
     </style>
   </head>
   <body>
-    <nav class="nav bg-[#EC9544] pt-[20px] pb-[20px] pl-[50px] pr-[100px] flex justify-between items-center ">
+    <nav class="nav bg-[#EC9544] pt-[20px] pb-[20px] pl-[100px] pr-[120px] flex justify-between items-center ">
       <div>
          <a href="index.html"> <img class=" logo rounded-full hover:animate-spin" src="Imagenes/gas_logo.png" alt="" width="100px"></a>
       </div>
@@ -90,9 +100,9 @@
         
        <div class="text-center">
          <a href="CapituloI.html"><button class=" capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce   mt-[20px] hover:animate-bounce ">Capitulo I</button></a> 
-         <a href="CapituloII.html" target="_blank"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo II </button></a>
-         <a href="CapituloIII.html" target="_blank"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo III </button></a>
-         <a href="CapituloIV.html" target="_blank"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo IV </button></a>
+         <a href="CapituloII.html"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo II </button></a>
+         <a href="CapituloIII.html"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo III </button></a>
+         <a href="CapituloIV.html"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo IV </button></a>
 
        </div>
       
@@ -757,6 +767,102 @@
 
           <p class="w-[80%] mx-auto mt-[5px]">Tabla 3: Metas de TI encontradas en la empresa Distribuidora de gas Vigil.</p>
         </div>
+      </section>
+
+      <section>
+        <h3>3.9 Obteniendo los procesos habilitantes como resultado de cruzarlos con las metas de TI</h3>
+        <div class="text-center mt-[50px]">
+          <button class="animate-bounce     btn_mostrar_pdf border-2 border-white p-[10px] w-[200px] rounded-lg" id="mostrar_pdf4" >Ver PDF <i class="fa-regular fa-eye pl-[20px] text-[1.1rem]"></i></button>
+
+        </div>
+       
+
+        <div class=" flex flex-col items-center mt-[40px] pdf1" id="divFrame4" >
+          <iframe class=" rounded-lg w-[80%] h-[500px]" src="Imagenes/MAPEO DE METAS4.pdf" allowfullscreen></iframe>
+    
+        </div>
+
+        <div class="w-[50%] mx-auto mt-[100px]">
+          <table>
+            <th>ID</th>
+            <th>Procesos</th>
+            <th>Puntaje</th>
+
+            <tbody>
+              <tr>
+                <td>EDM01</td>
+                <td>Asegurar el establecimiento y
+                  mantenimiento del Marco de Gobierno
+                  </td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>APO01</td>
+                <td>Gestionar el Marco de Gestión de TI</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>APO02</td>
+                <td>Gestionar la Estrategia</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>APO07</td>
+                <td>Gestionar los Recursos Humanos</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>BAI02</td>
+                <td>Gestionar la Definición de Requisitos</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>BAI07</td>
+                <td>Gestionar la Aceptación del Cambio y de la Transición</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mx-auto w-[100%] mt-[10px]">Tabla 4: Procesos habilitantes resultantes de la empresa Distribuidora de Gas Vigil.</p>
+
+        </div>
+      </section>
+
+      <section class="w-[80%] mx-auto text-justify marco">
+        <h3>3.10 Marco Teorico</h3>
+        <p>El programa de evaluación de COBIT está diseñado para proporcionar a las empresas
+          una metodología repetible, fiable y robusta para la evaluación de la capacidad de
+          sus procesos de TI. Estas evaluaciones normalmente se utilizan como parte del
+          programa de mejora de los procesos de una empresa y luego se pueden utilizar para
+          informar a la alta dirección ejecutiva de la empresa sobre la capacidad actual de sus
+          procesos de TI y de los objetivos de mejora que deben tenerse en cuenta, para poder
+          atender los requerimientos del negocio.
+          </p>
+
+          <p>En Cobit 5.0 un proceso se define como ‘una colección de prácticas influidas por las
+            políticas y procedimientos de empresa que toma entradas de una serie de recursos
+            (incluyendo otros procesos), manipula las entradas y produce salidas (p. ej.,
+            productos, servicios)’.
+            </p>
+
+            <p>El modelo de referencia de procesos de COBIT 5 subdivide los procesos dos principales
+              áreas de actividad – gobierno y gestión – divididas en dominios de procesos.
+              Procesos de Gobierno (EDM): Aseguran el cumplimiento de objetivos empresariales,
+              evalúa necesidades, condiciones y opciones de los interesados, dirige a través de la
+              priorización y toma de decisiones, supervisa (monitorea) el desempeño y
+              cumplimiento contra la dirección y los objetivos acordados.
+              </p>
+
+              <p>(Monitor) las actividades fijadas y acordadas por el cuerpo de gobierno.</p>
+              <div class="text-center">
+              <img class="mx-auto rounded-lg  mt-[40px]" src="Imagenes/marcoteorico1.png" alt="imagen1"  width="800">
+
+              <p>Todos los procesos contienen</p>
+              <img class=" mx-auto rounded-lg mt-[40px]" src="Imagenes/marcoteorico2.png" alt="" width="800">
+              <img class="mx-auto rounded-lg mt-[40px]" src="Imagenes/marcoteorico3.png" alt="" width="800">
+              <img class="mx-auto rounded-lg mt-[40px]" src="Imagenes/marcoteorico4.png" alt="" width="800">
+            </div>
+
       </section>
 
 

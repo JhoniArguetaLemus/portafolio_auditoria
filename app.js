@@ -81,6 +81,15 @@ button3.addEventListener('click', ()=>{
    mostrarPDF(pdfContainer3);
 })
 
+
+const button4 = document.getElementById('mostrar_pdf4');
+const pdfContainer4 = document.getElementById('divFrame4');
+
+button4.addEventListener('click', ()=>{
+   mostrarPDF(pdfContainer4);
+
+})
+
 function mostrarPDF(pdfContenedor){
    
    if (pdfContenedor.style.display === 'none' || pdfContenedor.style.display === '') {
