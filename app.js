@@ -60,8 +60,10 @@ const button = document.getElementById('mostrar_pdf1');
 const pdfContainer = document.getElementById('divFrame1');
       
       button.addEventListener('click', ()=>{
+         alert('mostrandopdf')
  
          mostrarPDF(pdfContainer)
+        
 
       })
 
@@ -114,7 +116,7 @@ function toggleAccordion1(id) {
 }
 
 
-function toggleAccordion2(id) {
+function toggleAccordion1(id) {
    const content = document.getElementById(id);
    const icon = document.getElementById(`icon-${id}`);
 

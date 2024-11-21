@@ -4,48 +4,1428 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
- 
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Capitulo IV</title>
+    <style>
+      section h3 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      .politicas h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-decoration: underline;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .actividades ol li {
+        margin-top: 20px;
+        transition: 0.1s ease-in-out;
+      }
+
+      .actividades ol li:hover {
+        border-bottom: 2px solid white;
+      }
+
+      .actividades h2 {
+        margin-top: 30px;
+      }
+
+
+      .btn_mostrar_pdf{
+        background-color: #EC9544;
+      
+      }
+
+      #frame_riesgo1{
+        display:  none;
+      }
+
+
+
+    </style>
   </head>
   <body>
-    <nav class="bg-[#EC9544] pt-[20px] pb-[20px] pl-[50px] pr-[100px] flex justify-between items-center ">
-       <div>
-           <img class="rounded-full hover:animate-spin" src="Imagenes/gas_logo.png" alt="" width="100px">
-       </div>
+    <nav class="nav bg-[#EC9544] pt-[20px] pb-[20px] pl-[50px] pr-[100px] flex justify-between items-center ">
+      <div>
+         <a href="index.html"> <img class=" logo rounded-full hover:animate-spin" src="Imagenes/gas_logo.png" alt="" width="100px"></a>
+      </div>
 
-       <div>
-             <h3 class="text-[2.2rem]"> Distribuidora de Gas Vigil</h3>
-       </div>
+      <div>
+            <h3 class="titulo text-[2.2rem] text-white"> Distribuidora de Gas Vigil</h3>
+      </div>
 
-       <div class="hamburguer">
-           <button class="menu animate-bounce" id="menu">
-            <img id="cilindro_menu" class="cilindro_menu" src="Imagenes/menu.png" alt="" width="80px">
-           </button>
-            
+      <div class="hamburguer">
+          <button class="menu animate-bounce" id="menu">
+           <img id="cilindro_menu" class="cilindro_menu" src="Imagenes/menu.png" alt="" width="80px">
+          </button>
+           
+      </div>
+     
+   </nav>
+
+
+   <section class="menu_opciones " id="menu_opciones">
+    <div class="mt-[50px]">
+      
+        
+       <div class="text-center">
+         <a href="CapituloI.html"><button class=" capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce   mt-[20px] hover:animate-bounce ">Capitulo I</button></a> 
+         <a href="CapituloII.html" ><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo II </button></a>
+         <a href="CapituloIII.html"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo III </button></a>
+         <a href="CapituloIV.html"><button class="capitulo text-center border-2 border-white p-[10px] w-[90%] rounded-lg bg-black text-white animate-bounce mt-[20px]">Capitulo IV </button></a>
+
        </div>
       
-    </nav>
+        
+    </div>
 
-    <section class="menu_opciones" id="menu_opciones">
-        <div class="mt-[50px]">
-           <p class="text-center text-[1.8rem]"> <a href="">Capitulo I</a></p>
-         
-           <p class="text-center text-[1.8rem]"> <a href="">Capitulo II</a></p>
-           <p class="text-center text-[1.8rem]"> <a href="">Capitulo III</a></p>
-           <p class="text-center text-[1.8rem]"> <a href="">Capitulo IV</a></p>
-            
-            
+</section>
+
+
+    <section class="mt-[120px] text-white ">
+      <h3>CAPITULO IV. PROPUESTA DE IMPLEMENTACIÓN DE PROCESOS</h3>
+
+      <div class="mt-[30px]">
+        <div class="text-white">
+          <table class="w-[80%] mx-auto">
+            <th class>Procesos ID</th>
+            <th>Nombre del proceso</th>
+            <th>Nivel evaluado</th>
+            <th>Nivel objetivo</th>
+            <th>Nivel 0</th>
+            <th>Nivel 1</th>
+            <th>Nivel 2</th>
+            <th>Nivel 3</th>
+            <th>Nivel 4</th>
+            <th>Nivel 5</th>
+
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  Los Procesos para el Gobierno y Gestión de TI
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td colspan="2">Evaluar, Dirigir, Monitorear</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr class="bg-orange-700">
+                <td>EDM01</td>
+                <td>
+                  Asegurar el establecimiento y mantenimiento del marco de
+                  referencia de gobierno.
+                </td>
+                <td>0-1</td>
+                <td>1</td>
+                <td>L</td>
+                <td>58%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td colspan="2">Alinear, Planificar y Organizar</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>APO01</td>
+                <td>Gestionar el Marco de Gestión de TI</td>
+                <td>1-0</td>
+                <td>1</td>
+                <td></td>
+                <td>60%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="bg-lime-500">
+                <td>APO02</td>
+                <td>Gestionar la Estrategia</td>
+                <td>0-1</td>
+                <td>1</td>
+                <td>F</td>
+                <td>55%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>APO07</td>
+                <td>Gestionar los Recursos Humanos</td>
+                <td>0-1</td>
+                <td>1</td>
+                <td>L</td>
+                <td>87.84%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td colspan="2">Construir, Adquirir e Implementar</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr class="bg-sky-600">
+                <td>BAI02</td>
+                <td>Gestionar la defición de requisitos</td>
+                <td>0-1</td>
+                <td>1</td>
+                <td>P</td>
+                <td>33.47%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>BAI08</td>
+                <td>Gestionar el conocimiento</td>
+                <td>0-1</td>
+                <td>1</td>
+                <td>P</td>
+                <td>36.39%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
 
+      <div>
+        <div
+          class="w-[80%] mx-auto text-white border-2 border-white rounded-lg mt-[50px]"
+        >
+          <div class="shadow rounded-lg">
+            <div class="border-b">
+              <button
+                class="w-full text-left py-4 px-6 focus:outline-none"
+                onclick="toggleAccordion1('accordion-1')"
+              >
+                <span class="font-semibold"
+                  >BAI02 <br />Gestionar la Definición de Requisitos
+                  <br />Dominio: Construir, Adquirir e Implementa</span
+                >
+                <svg
+                  class="w-5 h-5 inline-block float-right transition-transform duration-300"
+                  id="icon-accordion-1"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div id="accordion-1" class="hidden px-6 pb-4">
+                <h3>4.1 Descripción del proceso</h3>
+                <p class="w-[80%] mx-auto mt-[50px]">
+                  Identificar soluciones y analizar requerimientos en la empresa
+                  Distribuidora de Gas Vigil antes de la adquisición o creación
+                  para asegurar que estén en línea con los requerimientos
+                  estratégicos de la organización y que cubren los procesos de
+                  negocios, aplicaciones, información/datos, infraestructura y
+                  servicios. Coordinar con las partes interesadas afectadas la
+                  revisión de las opciones viables, incluyendo costes y
+                  beneficios relacionados, análisis de riesgo y aprobación de
+                  los requerimientos y soluciones propuestas.
+                </p>
+                <h3 class="mt-[50px]">
+                  4.2 Declaración del propósito del sistema.
+                </h3>
+                <p class="w-[80%] mx-auto mt-[10px]">
+                  Crear soluciones viables y óptimas que cumplan con las
+                  necesidades de la Distribuidora de Gas Vigil mientras se
+                  minimiza el riesgo
+                </p>
+                <h3 class="mt-[1.1rem]">4.3 Objetivo</h3>
+                <p class="w-[80%] mx-auto mt-[10px]">
+                  Verificar que las soluciones y requerimientos propuestos en
+                  Distribuidora de Gas Vigil sean aprobados y optimizados para
+                  satisfacer las necesidades estratégicas y operativas,
+                  considerando costos, beneficios y riesgos junto con las partes
+                  interesadas.
+                </p>
+
+                <h3 class="mt-[50px]">Definir los indicadores</h3>
+
+                <h3 class="mt-[50px]">4.4.1 Metas relacionadas con TI</h3>
+                <ol class="w-[80%] mx-auto mt-[20px]">
+                  <li>
+                    <strong
+                      >01 Alineamiento de TI y estrategia de negocio</strong
+                    >
+                  </li>
+                  <li>
+                    07 Entrega de servicios de TI de acuerdo a los requisitos
+                    del negocio
+                  </li>
+                  <li>
+                    12 Capacitación y soporte de procesos de negocio integrando
+                    aplicaciones y tecnología en procesos de negocio
+                  </li>
+                </ol>
+
+                <h3 class="mt-[30px]">4.4.2 Métricas</h3>
+                <ol class="w-[80%] mx-auto mt-[20px]">
+                  <li>
+                    Porcentaje de las metas y requerimientos estratégicos de la
+                    empresa soportados por las metas estratégicas para TI
+                  </li>
+                  <li>
+                    Nivel de satisfacción de las partes interesadas con el
+                    alcance del portafolio de programas y servicios planeados
+                  </li>
+                  <li>
+                    Porcentaje de los facilitadores de valor de TI mapeados con
+                    facilitadores de valor del negocio
+                  </li>
+                </ol>
+
+                <h3 class="mt-[50px]">4.4.3 Matriz RACI</h3>
+                <div class="mt-[50px]">
+                  <table class="w-[90%] mx-auto">
+                    <tr>
+                      <th colspan="6">Matriz RACI</th>
+                    </tr>
+                    <tbody>
+                      <tr>
+                        <td>Practica clave del Gobierno</td>
+                        <td>Clientes</td>
+                        <td>Proveedores</td>
+                        <td>Empleados de TI</td>
+                        <td>Empleados General</td>
+                        <td>Gerente/ Propietario</td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          BAI02.01 Definir y mantener los requerimientos
+                          técnicos y funcionales de negocio.
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>A</td>
+                        <td>I</td>
+                        <td>R</td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          BAI02.02 Realizar un estudio de viabilidad y proponer
+                          soluciones alternativas.
+                        </td>
+                        <td>C</td>
+                        <td></td>
+                        <td>A</td>
+                        <td>I</td>
+                        <td>R</td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          AI02.03 Gestionar los riesgos de los requerimientos
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>A</td>
+                        <td>I</td>
+                        <td>R</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          BAI02.04 Obtener la aprobación de los requerimientos y
+                          soluciones.
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>A</td>
+                        <td>I</td>
+                        <td>R</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="mt-[80px]">
+                  <h3>Entradas y salidas del proceso</h3>
+                  <div class="mt-[50px]">
+                    <table class="w-[90%] mx-auto">
+                      <th colspan="2">Entradas</th>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Número</td>
+                          <td class="text-center">Descripción</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="bg-[#EC9544] text-center">
+                            BAI02.01 Definir y mantener los requerimientos
+                            técnicos y funcionales de negocio.
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>APO01.06</td>
+                          <td>
+                            <p>Procedimientos de integridad de datos</p>
+                            <p>Guías de control y seguridad de los datos</p>
+                            <p>Guías de clasificación de datos</p>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>APO03.01</td>
+                          <td>Principios de arquitectura</td>
+                        </tr>
+
+                        <tr>
+                          <td>APO03.02</td>
+                          <td>
+                            <p>Modelo de arquitectura de la información</p>
+                            <p>
+                              Descripciones de los dominios de referencia y
+                              definición de arquitectura
+                            </p>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>APO03.05</td>
+                          <td>Guía de desarrollo de la solución</td>
+                        </tr>
+
+                        <tr>
+                          <td>APO10.02</td>
+                          <td>RFIs y RFPs de proveedores</td>
+                        </tr>
+
+                        <tr>
+                          <td>APO11.03</td>
+                          <td>Criterios de aceptación</td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="2" class="bg-[#EC9544] text-center">
+                            BAI02.02 Realizar un estudio de viabilidad y
+                            proponer soluciones alternativas
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>APO03.05</td>
+                          <td>Guía de desarollo de la solución</td>
+                        </tr>
+
+                        <tr>
+                          <td>APO10.02</td>
+                          <td>
+                            <p>
+                              Resultados de decisión de las evaluaciones de
+                              proveedores.
+                            </p>
+                            <p>Evaluaciones de RFI y RFP</p>
+                            <p>RFIs y RFPs de proveedores</p>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>APO11.03</td>
+                          <td>Criterios de aceptación</td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="2" class="bg-[#EC9544] text-center">
+                            BAI0.04 Obtener la aprobación de los requerimientos
+                            y soluciones
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>BAI01.09</td>
+                          <td>Plan de gestión de calidad</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="mt-[50px]">
+                  <table class="w-[90%] mx-auto">
+                    <th colspan="2">Salidas</th>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">Número</td>
+                        <td class="text-center">Descripción</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="bg-[#EC9544] text-center">
+                          BAI02.01 Definir y mantener los requerimientos
+                          técnicos y funcionales de negocio.
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <p>BAI03.01</p>
+                          <p>BAI03.02</p>
+                          <p>BAI04.01</p>
+                          <p>BAI05.01</p>
+                        </td>
+                        <td>Repositorio de definición de requerimiento</td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <p>
+                            BAI03.01
+                            <br />BAI03.02<br />BAI04.03<br />BAI05.01<br />BAI05.02
+                          </p>
+                        </td>
+                        <td>
+                          Confirmación de los criterios de aceptación de las
+                          partes interesadas
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>BAI03.09</td>
+                        <td>
+                          Registro de las peticiones de cambios de los
+                          requerimientos
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="2" class="bg-[#EC9544] text-center">
+                          BAI02.02. Realizar un estudio de viabilidad y proponer
+                          soluciones alternativas.
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>BAI03.02<br />BAI03.03</td>
+                        <td>Plan de alto nivel de adquisiciones/desarollo</td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="2" class="bg-[#EC9544] text-center">
+                          BAI02.03 Gestionar los riesgos de los requerimientos
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          BAI01.10<br />BAI03.02<br />BAI04.01<br />BAI05.01
+                        </td>
+                        <td>Registro de riesgo de los requerimientos</td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="2" class="bg-[#EC9544] text-center">
+                          BAI02.04 Obtener la aprobación de los requerimientos y
+                          soluciones
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>BAI01.10<br />BAI03.02<br />BAI05.01</td>
+                        <td>Acciones de mitigación de riesgos</td>
+                      </tr>
+
+                      <tr>
+                        <td>BAI03.02<br />BAI03.03<br />BAI03.04</td>
+                        <td>
+                          Aprobaciones del patrocinador de los requerimientos y
+                          soluciones propuestas
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>APO11.02</td>
+                        <td>Aprobación de las revisiones de calidad</td>
+                      </tr>
+
+                      <tr>
+                        <td>BAI01.09</td>
+                        <td>Plan de gestión de calidad</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div
+                  class="w-[80%] mx-auto text-justify actividades text-[1.2rem] mt-[100px]"
+                >
+                  <h3>
+                    4.6 Definir las actividades de cada práctica asociada al
+                    proceso
+                  </h3>
+                  <h2 class="text-[1.2rem] font-bold text-center">
+                    BAI02.01 Definir y mantener los requirimientos técnicos y
+                    funcionales de negocio.
+                  </h2>
+                  <h2 class="text-[1.2rem] font-bold text-center">
+                    Actividades
+                  </h2>
+                  <ol>
+                    <li>
+                      1. Definir e implementar la definición de requerimientos y
+                      el procedimiento de mantenimiento y un repositorio de
+                      requisitos acorde al tamaño, complejidad, objetivos y
+                      riesgos de la iniciativa que la empresa está considerando
+                      acometer.
+                    </li>
+                    <li>
+                      2. Expresar los requerimientos de la empresa en términos
+                      de como la diferencia entre las capacidades de negocio
+                      existentes y deseadas son tratadas y como cada rol
+                      interectuará con las solución y la utilizará.
+                    </li>
+                    <li>
+                      3. Durante todo el proyecto, obtener, analizar y confirmar
+                      que los requerimientos de todas las partes interesadas,
+                      incluyendo los criterios de aceptación relevantes, son
+                      considerados, obtenidos, priorizados y registrados de un
+                      modo comprensible para las partes interesadas,
+                      patrocinadores de negocio y personal de la implementación
+                      técnica, reconociendo que los requerimientos pueden
+                      cambiar y llegar a ser más detallados según se
+                      incrementen.
+                    </li>
+                    <li>
+                      4. Especificar y priorizar la información, los
+                      requerimientos técnicos y funcionales basados en los
+                      requerimientos de las partes interesadas. Incluir
+                      requerimientos de control de la información en los
+                      procesos de negocio, procesos automatizados y entornos de
+                      TI para hacer frente a los riesgos de la información y
+                      cumplimiento con regulaciones, leyes y contratos
+                      comerciales.
+                    </li>
+                    <li>
+                      5. Validar todos los requerimientos mediante
+                      aproximaciones tales como revisión por iguales, validación
+                      del modelo o prototipo operativo.
+                    </li>
+                    <li>
+                      6. Confirmar la aceptación de aspectos clave de los
+                      requerimientos, incluyendo reglas de negocio, controles de
+                      información, continuidad de negocio, cumplimiento legal y
+                      regulatorio, ‘auditabilidad’, ergonomía, operatividad y
+                      usabilidad, seguridad y soporte documental.
+                    </li>
+                    <li>
+                      7. Hacer seguimiento y controlar el alcance, los
+                      requerimientos y los cambios a lo largo del ciclo de vida
+                      de la solución durante el proyecto según evolucione la
+                      comprensión de la solución.
+                    </li>
+                    <li>
+                      8. Considerar los requerimientos relativos a políticas y
+                      estándares empresariales, arquitectura empresarial, planes
+                      TI estratégicos y tácticos, procesos de TI internos y
+                      externalizados, requerimientos de seguridad,
+                      requerimientos regulatorios, competencias del personal,
+                      estructura organizativa, caso de negocio y tecnologías
+                      catalizadoras.
+                    </li>
+                  </ol>
+
+                  <h2 class="text-[1.2rem] font-bold text-center">
+                    BAI02.02 Realizar un estudio de viabilidad y proponer
+                    soluciones alternativas.
+                  </h2>
+                  <h2 class="text-[1.2rem] font-bold text-center">
+                    Actividades
+                  </h2>
+
+                  <ol>
+                    <li>
+                      1.Definir y ejecutar un estudio de viabilidad, piloto o
+                      solución básica funcional que clara y concisamente
+                      describa las soluciones alternativas que satisfarán los
+                      requerimientos funcionales y de negocio. Incluir una
+                      evaluación de su viabilidad técnica y económica.
+                    </li>
+                    <li>
+                      2. Identificar las acciones requeridas para la adquisición
+                      o desarrollo de la solución, basada en la arquitectura de
+                      la empresa y tener en cuenta el alcance y/o tiempo y/o
+                      limitaciones de presupuesto.
+                    </li>
+                    <li>
+                      3. Revisar las soluciones alternativas con todas las
+                      partes interesadas y seleccionar la más apropiada basada
+                      en criterios de viabilidad, incluyendo costes y riesgos.
+                    </li>
+                    <li>
+                      4. Traducir la línea de acción preferida a un plan de alto
+                      de nivel de adquisición/desarrollo identificando recursos
+                      a utilizar y fases que requieran decisiones de
+                      continuar/no continuar.
+                    </li>
+                  </ol>
+
+                  <h2 class="text-[1.2rem] font-bold text-center">
+                    BAI02.03 Gestionar los riesgos de los requerimientos
+                  </h2>
+                  <h2 class="text-[1.2rem] font-bold text-center">
+                    Actividades
+                  </h2>
+
+                  <ol>
+                    <li>
+                      1. Involucrar a las partes interesadas para crear una
+                      lista potencial de requerimientos técnicos, funcionales,
+                      de calidad y riesgos relativos al procesamiento de la
+                      información (debido por ejemplo a falta de involucración
+                      de los usuarios, expectativas irreales, desarrolladores
+                      añadiendo funcionalidad innecesaria).
+                    </li>
+                    <li>
+                      2. Analizar y priorizar los riesgos de los requerimientos
+                      conforme probabilidad e impacto. Si aplica, determinar los
+                      impactos en coste y tiempo.
+                    </li>
+                    <li>
+                      2. Analizar y priorizar los riesgos de los requerimientos
+                      conforme probabilidad e impacto. Si aplica, determinar los
+                      impactos en coste y tiempo.
+                    </li>
+                  </ol>
+
+                  <h2 class="text-[1.2rem] font-bold text-center">
+                    BAI02.04 Obtener la aprobación de los requerimientos y
+                    soluciones.
+                  </h2>
+                  <h2 class="text-[1.2rem] font-bold text-center">
+                    Actividades
+                  </h2>
+                  <ol>
+                    <li>
+                      1. Asegurar que el patrocinador de negocio o propietario
+                      del producto toman la decisión final con respecto a la
+                      elección de la solución, enfoque de adquisición y diseño
+                      de alto nivel acorde al caso de negocio. Coordinar la
+                      realimentación de las partes interesadas afectadas y
+                      obtener el cierre por parte de las autoridades apropiadas
+                      tanto técnicas como de negocio (por ejemplo, dueño del
+                      proceso, arquitecto de empresa, gestor de operaciones,
+                      seguridad) para el enfoque propuesto.
+                    </li>
+                    <li>
+                      2. Obtener revisiones de calidad completas y de cada fase
+                      clave del proyecto, iteración versión comparando los
+                      resultados obtenidos contra los criterios originales de
+                      aceptación. Disponer de la firma del patrocinador y otros
+                      interesados en cada revisión de calidad.
+                    </li>
+                  </ol>
+                </div>
+                <!--activos de informacion tabla-->
+
+                <div class="mt-[100px]">
+                  <table class="w-[90%] mx-auto">
+                    <tr>
+                      <th colspan="3">Activos de información</th>
+                      <th>Activos físicos</th>
+                      <th>Activos Humanos</th>
+                    </tr>
+                    <tr>
+                      <th>COD</th>
+                      <th>Manejo de Información de TI</th>
+                      <th>Software</th>
+                      <th>Hardware</th>
+                      <th>Personal</th>
+                    </tr>
+
+                    <tbody>
+                      <tr>
+                        <td rowspan="4">BAI02.01</td>
+                      </tr>
+
+                      <tr>
+                        <td>Repositorio de definición de requerimiento.</td>
+                        <td>Azure DevOps</td>
+                        <td></td>
+                        <td>Personal de TI</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Confirmación de los criterios de aceptación de las
+                          partes interesadas.
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>Personal de TI</td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          Registro de las peticiones de cambios de los
+                          requerimientos
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>Gerente</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!--tabla 2 -->
+                <div class="mt-[50px]">
+                  <table class="w-[90%] mx-auto">
+                    <tr>
+                      <th colspan="3">Activos de información</th>
+                      <th>Activos físicos</th>
+                      <th>Activos Humanos</th>
+                    </tr>
+                    <tr>
+                      <th>COD</th>
+                      <th>Manejo de Información de TI</th>
+                      <th>Software</th>
+                      <th>Hardware</th>
+                      <th>Personal</th>
+                    </tr>
+
+                    <tbody>
+                      <tr>
+                        <td rowspan="3">BAI02.02</td>
+                      </tr>
+
+                      <tr>
+                        <td>Informe de estudio de viabilidad</td>
+                        <td></td>
+                        <td></td>
+                        <td>Personal de TI<br />Gerencia</td>
+                      </tr>
+                      <tr>
+                        <td>Plan de alto nivel de adquisiciones/desarrollo</td>
+                        <td></td>
+                        <td></td>
+                        <td>Personal de TI <br />Gerencia</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!--tabla 3-->
+
+                <div class="mt-[50px]">
+                  <table class="w-[90%] mx-auto">
+                    <tr>
+                      <th colspan="3">Activos de información</th>
+                      <th>Activos físicos</th>
+                      <th>Activos Humanos</th>
+                    </tr>
+                    <tr>
+                      <th>COD</th>
+                      <th>Manejo de Información de TI</th>
+                      <th>Software</th>
+                      <th>Hardware</th>
+                      <th>Personal</th>
+                    </tr>
+
+                    <tbody>
+                      <tr>
+                        <td rowspan="2">BAI02.03</td>
+                      </tr>
+
+                      <tr>
+                        <td>Acciones de mitigación de riesgos</td>
+                        <td></td>
+                        <td></td>
+                        <td>Personal de TI<br />Gerencia</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- tabla 4-->
+
+                <div class="mt-[50px]">
+                  <table class="w-[90%] mx-auto">
+                    <tr>
+                      <th colspan="3">Activos de información</th>
+                      <th>Activos físicos</th>
+                      <th>Activos Humanos</th>
+                    </tr>
+                    <tr>
+                      <th>COD</th>
+                      <th>Manejo de Información de TI</th>
+                      <th>Software</th>
+                      <th>Hardware</th>
+                      <th>Personal</th>
+                    </tr>
+
+                    <tbody>
+                      <tr>
+                        <td rowspan="3">BAI02.04</td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          Aprobaciones del patrocinador de los requerimientos y
+                          soluciones propuestas
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>Personal de TI<br />Gerencia</td>
+                      </tr>
+                      <tr>
+                        <td>Aprobación de las revisiones de calidad</td>
+                        <td></td>
+                        <td></td>
+                        <td>Personal de TI <br />Gerencia</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!--matriz de riesgos-->
+
+                <div>
+                  <h3>4.7 Matriz de Riesgos del Proceso</h3>
+
+                  <div class="text-center mt-[50px]">
+                    <button
+                      class="animate-bounce btn_mostrar_pdf border-2 border-white p-[10px] w-[200px] rounded-lg"
+                      id="btn_riesgo1"
+                    >
+                      Ver PDF
+                      <i class="fa-regular fa-eye pl-[20px] text-[1.1rem]"></i>
+                    </button>
+                  </div>
+
+                  <div
+                    class="flex flex-col items-center mt-[40px] pdf1"
+                    id="frame_riesgo1"
+                  >
+                    <iframe
+                      class="rounded-lg w-[80%] h-[500px]"
+                      src="Imagenes/MatrizRiesgos1.pdf"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+
+
+                <div class="politicas mt-[100px] mx-auto w-[90%]">
+                  <h3>Políticas del plan de mejora.</h3>
+                  <h2 class="font-bold tex-[1.4rem] text-center">4.8.1 Políticas a implementar</h2>
+                  <h4 class="font-bold text-center">Política para organizar sesiones de talleres con todas las partes interesadas para explicar y clarificar los requisitos.</h4>
+                  <h4 class="font-bold text-center">Objetivo</h4>
+                  <p>Asegurar que todas las partes interesadas tengan una comprensión clara y común de los requisitos del proyecto o de la iniciativa. Esto incluye aclarar expectativas, objetivos y cualquier aspecto técnico o funcional.</p>
+                  <h4 class="font-bold text-center">Alcance</h4>
+                  <p>Esta política se aplica a todos los equipos y departamentos involucrados en la recopilación de requisitos y datos en la empresa Distribuidora de Gas Vigil</p>
+
+                  <h4 class="font-bold text-center">Lineamientos</h4>
+                  <ol>
+                    <li>Utilizar encuestas, entrevistas y talleres para obtener información relevante.</li>
+                    <li>Fomentar el uso de herramientas digitales para facilitar la recopilación y almacenamiento de datos.</li>
+                    <li>-	Establecer un proceso de revisión donde los requisitos sean verificados por todas las partes interesadas.</li>
+                    <li>-	Implementar sesiones de retroalimentación para asegurar que la información recopilada sea adecuada y útil.</li>
+                  </ol>
+
+                  <h4 class="font-bold text-center">Herramienta recomendada</h4>
+                  <p><strong>Google Forms</strong></p>
+                  <p>Se recomienda Google Forms para la toma de requisites ya que mediante preguntas de selección se pueden conocer las opinions de las partes interesadas. </p>
+                  <p><strong>Microsoft Teams </strong></p>
+                  <p>Plataforma útil para realizar entrevistas virtuales, permitiendo grabar las sesiones para referencia futura.</p>
+
+                  <h4 class="font-bold text-center">
+                    Política para implementar un procedimiento de control de cambios que requiera revisiones. 
+                    </h4>
+
+                  <h4 class="font-bold text-center">Objetivo</h4>
+                 <p>Garantizar que la recopilación de requisitos se realice de manera eficiente y efectiva en la empresa Distribuidora de Gas Vigil, permitiendo que todos los requisitos sean comprensibles para todas las partes involucradas. Esto se logrará a través de un enfoque sistemático que incluya un proceso de revisión estructurado para validar la precisión y pertinencia de los requisitos, lo cual fomentará una comunicación clara y un entendimiento compartido entre todos los interesados.</p>
+
+                 <h4>Alcance</h4>
+                 <p>Esta política es aplicable a todos los departamentos y equipos dentro de la empresa Distribuidora de Gas Vigil que participen en la identificación, recopilación y análisis de requisitos para proyectos y soluciones.</p>
+
+                 <h4>Lineamientos</h4>
+                 <ol>
+                  <li>Implementar métodos de recopilación de información como entrevistas, grupos focales y cuestionarios para obtener datos relevantes y detallados.</li>
+                  <li>Promover el uso de plataformas digitales y software especializado para facilitar la organización y el acceso a la información recopilada.</li>
+                  <li>- Diseñar un proceso de verificación en el que los requisitos sean revisados y aprobados por todas las partes interesadas antes de su implementación.</li>
+                  <li>Realizar reuniones periódicas de retroalimentación para asegurar que la información recopilada sea precisa y cumpla con las expectativas de los interesados.</li>
+                 </ol>
+
+                 <h4>Herramientas recomendadas</h4>
+                 <p><Strong>Jira</Strong>:Para seguimiento de cambios en requisitos y tareas. </p>
+                 <p><strong>Asana o Trello </strong>: Para la gestión de tareas y colaboración.</p>
+
+                 <h4>Política para designar un representante de cada grupo de usuarios clave que actúe como enlace en la definición de requisitos y asegure la participación continua. </h4>
+                 <h4>Objetivo</h4>
+
+                 <p>Promover la inclusión activa de usuarios finales  en el proceso de toma de requisitos en la empresa Distribuidora de Gas Vigil, asegurando que sus perspectivas y necesidades sean consideradas de manera integral.  </p>
+
+                 <h4>Alcance</h4>
+                 <p>Esta política se aplica a todos los proyectos y soluciones dentro de la empresa Distribuidora de Gas Vigil, abarcando a todos los departamentos y equipos involucrados en la definición y recopilación de requisitos, así como a todos los usuarios finales y partes interesadas que interactúan con los productos y servicios de la organización.</p>
+
+                 <h4>Lineamientos</h4>
+                 <ol>
+                  <li>Organizar sesiones de trabajo y talleres colaborativos en los que se invite a usuarios finales y partes interesadas a expresar sus necesidades y expectativas.</li>
+                  <li>Utilizar métodos de recopilación participativa, como encuestas y entrevistas, para captar opiniones y comentarios de los usuarios finales sobre los requisitos propuestos.</li>
+                  <li> Establecer un sistema de comunicación claro que permita a los usuarios finales y partes interesadas proporcionar retroalimentación continua durante el proceso de desarrollo.</li>
+                  </ol>
+
+                 <h4>Herramientas recomendadas</h4>
+                 <p><strong>Miro o Mural</strong>:Estas herramientas permiten crear pizarras interactivas donde los usuarios pueden colaborar en tiempo real. Son ideales para sesiones de trabajo y talleres, permitiendo a los participantes expresar sus ideas y necesidades de manera visual. </p>
+
+
+                </div>
+                  
+                  
+                <div class="w-[90%] mx-auto mt-[100px] text-justify">
+
+                  <h3>4.8.2 Beneficios/costos que obtendria con la implementación del modelo gobierno y gestion de TI.</h3>
+                  <ol class="mt-[30px]">
+                   <li>1.	Asegura que todos los requisitos sean comprensibles y estén bien definidos, reduciendo malentendidos.</li>
+                   <li>2.	Facilita la inclusión de las perspectivas y necesidades de los usuarios finales en el proceso de definición de requisitos.</li>
+                   <li>Establece canales de comunicación claros y eficientes entre las partes interesadas, fomentando un diálogo constante.</li>
+                   <li>4.	Implementa un proceso de revisión que asegura que los requisitos sean validados y aprobados por todas las partes interesadas antes de su implementación.</li>
+                   <li>5.	Utiliza métodos participativos (como encuestas y talleres) que garantizan que la información recopilada sea relevante y precisa.</li>
+                   <li>6.	Al considerar activamente las necesidades de los usuarios finales, se puede mejorar la satisfacción del cliente y la calidad de los productos o servicios.</li>
+                  </ol>
+
+                  <div class="mt-[50px]">
+                   <table ">
+                     <th>Humano</th>
+                     <th>Otros</th>
+                     <th>Software</th>
+                     <th>Hardware</th>
+
+                     <tbody>
+                       <tr>
+                         <td>Especialistas para organizar y llevar a cabo talleres y sesiones de trabajo ($300)</td>
+                         <td>Cursos y talleres para capacitar a los empleados en técnicas de recopilación de requisitos y uso de herramientas. ($200)</td>
+                         <td>Licencias para Jira, Asana o Trello  ($50) <br>
+
+                           Licencia de Microsoft Teams ($40)
+                           </td>
+
+                           <td>Laptop ($550)</td>
+                       </tr>
+
+                       <tr>
+                         <td>Personal de la empresa ($200)</td>
+                         <td>Material impreso y recursos didácticos utilizados en sesiones de trabajo.($40)</td>
+                         <td>Google Forms</td>
+                         <td>Laptop ($600) </td>
+                       </tr>
+
+                       <tr>
+                         <td></td>
+                         <td>Internet ($35)</td>
+                         <td></td>
+                         <td>Computadora de escritorio ($1200)</td>
+                       </tr>
+
+                       <tr>
+                         <td></td>
+                         <td>Energía ($40)</td>
+                         <td></td>
+                         <td>Impresora ($150)</td>
+                       </tr>
+
+                       <tr>
+                         <td>$500</td>
+                         <td>$315</td>
+                         <td>$90</td>
+                         <td>$2,500</td>
+                       </tr>
+
+                       <tr>
+                         <td colspan="4" class="text-center">$3,405</td>
+                       </tr>
+                     </tbody>
+                   </table>
+                </div>
+
+              </div>
+            </div>
+            <div class="border-b">
+              <button
+                class="w-full text-left py-4 px-6 focus:outline-none"
+                onclick="toggleAccordion1('accordion-2')"
+              >
+                <span class="font-semibold">EDM01 <br>Asegurar el Establecimiento y Mantenimiento del Marco de Referencia de Gobierno. <br>Dominio: Gobierno y Gestión de TI  </span>
+                <svg
+                  class="w-5 h-5 inline-block float-right transition-transform duration-300"
+                  id="icon-accordion-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div id="accordion-2" class="hidden px-6 pb-4">
+                
+                <div>
+                  <h3>4.1 Descripción del proceso (EDM01)</h3>
+                  <p>Establecer y mantener un marco de referencia de gobierno que asegure que las actividades de TI de la empresa Distribuidora de Gas Vigil estén alineadas con las estrategias organizacionales. Este marco debe definir las políticas, estructuras y procesos para asegurar el control, la dirección y la evaluación de TI en función de los objetivos estratégicos de la organización. 
+                    El proceso incluye la participación activa de las partes interesadas, asegurando que el marco sea revisado y optimizado periódicamente para alinearse con cambios en los objetivos y en el entorno de la empresa. Este proceso tiene como fin garantizar una gobernanza sólida, orientada al cumplimiento de las metas estratégicas y operativas. 
+                    </p>
+                </div>
+
+                <div>
+                  <h3>4.2 Declaración del propósito del sistema (EDM01) </h3>
+                  <p>Establecer un marco de gobierno para TI en Distribuidora de Gas Vigil que provea una estructura coherente y eficiente para la toma de decisiones, el control y la supervisión de TI. Esto permite que las acciones y recursos de TI estén alineados con los objetivos de negocio, garantizando transparencia, optimización de riesgos y beneficios para la organización. </p>
+                </div>
+
+                <div>
+                  <h3>4.3 Objetivo</h3>
+                  <p>Asegurar que el marco de gobierno de TI en Distribuidora de Gas Vigil sea efectivo, alineado con los objetivos estratégicos de la organización, y que cuente con el apoyo y la participación de las partes interesadas. Este marco debe facilitar la toma de decisiones estratégicas informadas, optimizar el uso de recursos y garantizar la transparencia hacia los interesados. </p>
+                </div>
+
+                <div>
+                  <h3>4.4 Definir los Indicadores </h3>
+                  <h4>4.4.1 Metas relacionadas con TI (EDM01)</h4>
+                  <ol>
+                    <li class="underline"><strong>01 Alineamiento de TI y  estrategia de negocio </strong></li>
+
+                    <li>03 Compromiso de la dirección ejecutiva para tomar. decisiones relacionadas con TI</li>
+                    <li>07 Entrega de servicios de TI de acuerdo a los requisitos del negocio</li>
+                  </ol>
+
+                  <h3>4.4.2 Métricas</h3>
+                  <ol>
+                    <li>	Porcentaje de las metas y requerimientos estratégicos de la empresa soportados por las  metas estratégicas para TI.</li>
+                    <li>Nivel de satisfacción de las partes interesadas con el alcance del portafolio de programas y servicios planeados</li>
+                    <li>Porcentaje de los facilitadores de valor de TI mapeados con facilitadores de valor del negocio</li>
+                  </ol>
+
+                  <div>
+                    <h3>4.4.3 Matriz RACI</h3>
+                    
+                    <div class="mt-[50px]">
+                      <table class="w-[90%] mx-auto">
+                        <tr>
+                          <th colspan="6">Matriz RACI</th>
+                        </tr>
+                        <tbody>
+                          <tr>
+                            <td>Practica clave del Gobierno</td>
+                            <td>Gerente/Propietario</td>
+                            <td>Empleados General</td>
+                            <td>Empleados de TI</td>
+                            <td>Proveedores</td>
+                            <td>Clientes</td>
+                          </tr>
+    
+                          <tr>
+                            <td>
+                              EDM01.01 Evaluar el sistema de gobierno para el uso de TI de la organización 
+                            </td>
+                            <td>R</td>
+                            <td>I</td>
+                            <td>R</td>
+                            <td>C</td>
+                            <td>I</td>
+                          </tr>
+    
+                          <tr>
+                            <td>
+                              EDM01.02 Dirigir el sistema de gobierno de TI, considerando el contexto empresarial  
+                            </td>
+                            <td>R</td>
+                            <td>C</td>
+                            <td>R</td>
+                            <td>C</td>
+                            <td>I</td>
+                          </tr>
+    
+                          <tr>
+                            <td>
+                              EDM01.03 Supervisar el desempeño y cumplimiento del sistema de gobierno de TI 
+                            </td>
+                            <td>R</td>
+                            <td>I</td>
+                            <td>R</td>
+                            <td>I</td>
+                            <td>I</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              EDM01.04 Revisar y ajustar el marco de gobierno de TI para alinearlo con cambios en el negocio  
+                            </td>
+                            <td>A</td>
+                            <td>I</td>
+                            <td>R</td>
+                            <td>C</td>
+                            <td>I</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!---4.5-->
+
+                <div>
+                  <h3>4.5 Entradas y salidas del proceso</h3>
+
+                  <!--entradas-->
+
+                  <div class="mt-[50px]">
+                    <table class="w-[90%] mx-auto">
+                      <th colspan="2">Entradas</th>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Número</td>
+                          <td class="text-center">Descripción</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="bg-[#EC9544] text-center">
+                            EDM01.01 Evaluar el sistema de gobierno.
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>MEA03.02 </td>
+                          <td>
+                            Comunicaciones de
+                            los requerimientos de
+                            cumplimiento modificados
+                          </td>
+                        </tr>
+
+                        
+
+                        
+
+                      
+                        
+
+                        <tr>
+                          <td colspan="2" class="bg-[#EC9544] text-center">
+                            EDM01.02 Orientar el sistema de gobierno.
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="2" class="bg-[#EC9544] text-center">
+                            EDM01.03 Supervisar el sistema de gobierno.
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>MEA01.04 </td>
+                          <td>Informes de rendimiento </td>
+                        </tr>
+
+                      <tr>
+                        <td>MEA01.05 </td>
+                        <td>Estado y resultados de las
+                          acciones</td>
+                      </tr>
+
+                      <tr>
+                        <td>MEA02.01 </td>
+                        <td>Resultados de estudios
+                          comparativos y otras
+                          evaluaciones.
+                          <br>Resultado de la
+                          monitorización y
+                          revisiones de control
+                          interno</td>
+                      </tr>
+
+
+                      <tr>
+                        <td>MEA02.03 </td>
+                        <td>Resultados de las
+                          revisiones de las
+                          autoevaluaciones</td>
+                      </tr>
+
+
+                      <tr>
+                        <td>MEA02.06</td>
+                        <td>Planes de aseguramiento</td>
+                      </tr>
+
+                      <tr>
+                        <td>MEA03.03 </td>
+                        <td>Confirmaciones de
+                          cumplimiento</td>
+                      </tr>
+
+                      <tr>
+                        <td>MEA03.04 </td>
+                        <td>Informes sobre aspectos
+                          de no cumplimiento y el
+                          origen de sus causas
+                          <br>Informes de
+                          aseguramiento del
+                          cumplimiento</td>
+                      </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+
+
+                  <!--salidas-->
+
+                  <div class="mt-[50px]">
+                    <table class="w-[90%] mx-auto">
+                      <th colspan="2">Salidas</th>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Número</td>
+                          <td class="text-center">Descripción</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="bg-[#EC9544] text-center">
+                            EDM01.01 Evaluar el sistema de gobierno.
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Todo EDM <br>
+                            APO01.01<br>
+                            APO01.03 </td>
+                          <td>
+                            Principios directrices del
+                            gobierno de la empresa
+                          </td>
+                        </tr>
+
+                         
+
+                        <tr>
+                          <td>Todo EDM <br>
+                            APO01.01</td>
+                          <td>Modelo de toma de
+                            decisiones</td>
+                        </tr>
+
+                        <tr>
+                          <td>Todo EDM <br>
+                            APO01.02</td>
+
+                            <td>Niveles de autoridad </td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="2" class="bg-[#EC9544] text-center">
+                            EDM01.02 Orientar el sistema de gobierno.
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Todo EDM <br>
+                            APO01.04 </td>
+                          <td>Comunicaciones del
+                            gobierno de la empresa </td>
+                        </tr>
+
+                      <tr>
+                        <td>APO07.03 <br>
+                          APO07.04 </td>
+                        <td>Enfoque de sistema de
+                          recompensa</td>
+                      </tr>
+
+
+                      <tr>
+                        <td colspan="2" class="bg-[#EC9544] text-center">
+                          EDM01.03 Supervisar el sistema de gobierno.
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Todo EDM<br>APO01.07</td>
+                        <td>retroalimentación sobre rendimiento y efectividad
+                          del gobierno</td>
+                      </tr>
+                   
+
+                        
+                      </tbody>
+                    </table>
+                  </div>
+
+
+                </div>
+
+                <!--fin 4.5 -->
+
+
+
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
     </section>
 
-    
-
-
-    
-    <script src="app.js"></script>
+    <script src="capitulo4.js"></script>
   </body>
-
-  
 </html>
