@@ -17,12 +17,34 @@ button1.addEventListener('click', ()=>{
 
 })
 
+
+//pdf3
+
+const button3 = document.getElementById('btn_riesgo3');
+const pdfContainer3 = document.getElementById('frame_riesgo3');
+
+button3.addEventListener('click', ()=>{
+   mostrarPDF(pdfContainer3);
+
+})
+
+
+const button2 = document.getElementById('btn_riesgo2');
+const pdfContainer2 = document.getElementById('frame_riesgo2');
+
+button2.addEventListener('click', ()=>{
+   mostrarPDF(pdfContainer2);
+
+})
 function mostrarPDF(pdfContenedor){
    
    if (pdfContenedor.style.display === 'none' || pdfContenedor.style.display === '') {
       pdfContenedor.style.display = 'flex'; // Muestra el contenedor
+      
+
   } else {
      pdfContenedor.style.display = 'none'; // Oculta el contenedor
+     
   }
 
 

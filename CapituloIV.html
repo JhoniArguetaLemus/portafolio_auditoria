@@ -27,6 +27,8 @@
         transition: 0.1s ease-in-out;
       }
 
+      
+
       .actividades ol li:hover {
         border-bottom: 2px solid white;
       }
@@ -35,17 +37,39 @@
         margin-top: 30px;
       }
 
+      .actividades h4{
+        margin-top: 20px ;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
 
       .btn_mostrar_pdf{
         background-color: #EC9544;
       
       }
 
-      #frame_riesgo1{
+      #frame_riesgo1, #frame_riesgo3, #frame_riesgo2{
         display:  none;
       }
 
 
+      @media  screen and (max-width:767px) {
+      .divTitulo{
+        width: 700px;
+  
+        
+      }
+
+      .divTitulo .titulo_capitulo{
+        font-size: 1.4rem;
+      }
+
+     .seccion1 .tabla_procesos{
+        width: 80%;
+      }
+    }
 
     </style>
   </head>
@@ -87,12 +111,14 @@
 </section>
 
 
-    <section class="mt-[120px] text-white ">
-      <h3>CAPITULO IV. PROPUESTA DE IMPLEMENTACIÓN DE PROCESOS</h3>
+    <section class="mt-[120px] text-white seccion1 ">
+      <div class="divTitulo">
+      <h3 class="titulo_capitulo">CAPITULO IV. PROPUESTA DE IMPLEMENTACIÓN DE PROCESOS</h3>
+    </div>
 
       <div class="mt-[30px]">
-        <div class="text-white">
-          <table class="w-[80%] mx-auto">
+        <div class="text-white border-2 border-black">
+          <table class="w-[80%] mx-auto tabla_procesos">
             <th class>Procesos ID</th>
             <th>Nombre del proceso</th>
             <th>Nivel evaluado</th>
@@ -603,7 +629,7 @@
                 </div>
 
                 <div
-                  class="w-[80%] mx-auto text-justify actividades text-[1.2rem] mt-[100px]"
+                  class="w-[80%] mx-auto text-justify actividades text-[1.2rem] mt-[100px] actividades"
                 >
                   <h3>
                     4.6 Definir las actividades de cada práctica asociada al
@@ -942,7 +968,7 @@
                       class="animate-bounce btn_mostrar_pdf border-2 border-white p-[10px] w-[200px] rounded-lg"
                       id="btn_riesgo1"
                     >
-                      Ver PDF
+                      Ver Matriz de Riesgo
                       <i class="fa-regular fa-eye pl-[20px] text-[1.1rem]"></i>
                     </button>
                   </div>
@@ -1095,7 +1121,7 @@
 
               </div>
             </div>
-            <div class="border-b">
+            <div class="border-b border-2 border-white">
               <button
                 class="w-full text-left py-4 px-6 focus:outline-none"
                 onclick="toggleAccordion1('accordion-2')"
@@ -1116,24 +1142,24 @@
               </button>
               <div id="accordion-2" class="hidden px-6 pb-4">
                 
-                <div>
-                  <h3>4.1 Descripción del proceso (EDM01)</h3>
-                  <p>Establecer y mantener un marco de referencia de gobierno que asegure que las actividades de TI de la empresa Distribuidora de Gas Vigil estén alineadas con las estrategias organizacionales. Este marco debe definir las políticas, estructuras y procesos para asegurar el control, la dirección y la evaluación de TI en función de los objetivos estratégicos de la organización. 
+                <div class="mx-auto w-[90%] text-justify">
+                  <h3 class="mt-[50px]">4.1 Descripción del proceso (EDM01)</h3>
+                  <p class="mt-[50px]"> Establecer y mantener un marco de referencia de gobierno que asegure que las actividades de TI de la empresa Distribuidora de Gas Vigil estén alineadas con las estrategias organizacionales. Este marco debe definir las políticas, estructuras y procesos para asegurar el control, la dirección y la evaluación de TI en función de los objetivos estratégicos de la organización. 
                     El proceso incluye la participación activa de las partes interesadas, asegurando que el marco sea revisado y optimizado periódicamente para alinearse con cambios en los objetivos y en el entorno de la empresa. Este proceso tiene como fin garantizar una gobernanza sólida, orientada al cumplimiento de las metas estratégicas y operativas. 
                     </p>
                 </div>
 
-                <div>
-                  <h3>4.2 Declaración del propósito del sistema (EDM01) </h3>
+                <div class="mx-auto w-[90%] text-justify mt-[50px]">
+                  <h3 class="mt-[50px]">4.2 Declaración del propósito del sistema (EDM01) </h3>
                   <p>Establecer un marco de gobierno para TI en Distribuidora de Gas Vigil que provea una estructura coherente y eficiente para la toma de decisiones, el control y la supervisión de TI. Esto permite que las acciones y recursos de TI estén alineados con los objetivos de negocio, garantizando transparencia, optimización de riesgos y beneficios para la organización. </p>
                 </div>
 
-                <div>
-                  <h3>4.3 Objetivo</h3>
-                  <p>Asegurar que el marco de gobierno de TI en Distribuidora de Gas Vigil sea efectivo, alineado con los objetivos estratégicos de la organización, y que cuente con el apoyo y la participación de las partes interesadas. Este marco debe facilitar la toma de decisiones estratégicas informadas, optimizar el uso de recursos y garantizar la transparencia hacia los interesados. </p>
+                <div class="mx-auto w-[90%] text-justify">
+                  <h3 class="mt-[50px]">4.3 Objetivo</h3>
+                  <p class="mt-[50px]">Asegurar que el marco de gobierno de TI en Distribuidora de Gas Vigil sea efectivo, alineado con los objetivos estratégicos de la organización, y que cuente con el apoyo y la participación de las partes interesadas. Este marco debe facilitar la toma de decisiones estratégicas informadas, optimizar el uso de recursos y garantizar la transparencia hacia los interesados. </p>
                 </div>
 
-                <div>
+                <div class="mx-auto w-[90%] text-justify">
                   <h3>4.4 Definir los Indicadores </h3>
                   <h4>4.4.1 Metas relacionadas con TI (EDM01)</h4>
                   <ol>
@@ -1150,8 +1176,8 @@
                     <li>Porcentaje de los facilitadores de valor de TI mapeados con facilitadores de valor del negocio</li>
                   </ol>
 
-                  <div>
-                    <h3>4.4.3 Matriz RACI</h3>
+                  <div class="mx-auto w-[90%] text-justify">
+                    <h3 class="mt-[50px]">4.4.3 Matriz RACI</h3>
                     
                     <div class="mt-[50px]">
                       <table class="w-[90%] mx-auto">
@@ -1219,8 +1245,8 @@
 
                 <!---4.5-->
 
-                <div>
-                  <h3>4.5 Entradas y salidas del proceso</h3>
+                <div >
+                  <h3 class="mt-[50px]">4.5 Entradas y salidas del proceso</h3>
 
                   <!--entradas-->
 
@@ -1414,10 +1440,1202 @@
 
                 <!--fin 4.5 -->
 
+                <!--inicio 4.6 -->
+                <div class="actividades">
 
+                  <h3>4.6 Definir las actividades de cada práctica asociada al proceso </h3>
+                  <h4>EDM01.01 Evaluar el sistema de gobierno.</h4>
+                  <h4>Actividades</h4>
+                  <ol>
+                    <li>1.Analizar e identificar los factores del entorno interno y externo (obligaciones legales, contractuales y regulatorias) y tendencias en el entorno del negocio que pueden influir en el diseño del gobierno.</li>
+                    <li>2.Determinar la relevancia de TI y su papel con respecto al negocio.</li>
+                    <li>3. Considerar las regulaciones externas, obligaciones legales y contractuales y determinar cómo deben ser aplicadas en el gobierno de TI de la empresa.</li>
+                    <li>4. Alinear el uso y el procesamiento ético de la información y su impacto en la sociedad, en el entorno natural y en los intereses de las partes interesadas internas y externas con los objetivos, visión y dirección de la empresa.</li>
+                    <li>5. Determinar las implicaciones del entorno de control conjunto de la empresa con respecto a TI.</li>
+                    <li>6. Articular los principios que guiarán el diseño de la toma de decisiones sobre el gobierno de TI.</li>
+                    <li>7. Comprender la cultura empresarial de la toma de decisiones y determinar un modelo óptimo en la toma de decisiones para TI.</li>
+                    <li>8. Determinar los niveles apropiados para la delegación de autoridad, incluyendo reglas de umbrales, para las decisiones de TI.</li>
+                </ol>
+
+
+                <h4>EDM01.02 Orientar el sistema de gobierno. </h4>
+                <p>Informar a los líderes y obtener su apoyo, su aceptación y su compromiso. Guiar las estructuras, procesos y prácticas para el gobierno de TI en línea con los principios, modelos para la toma de decisiones y niveles de autoridad diseñados para el gobierno. Definir la información necesaria para una toma de decisiones informadas.</p>
+                <h4>Actividades</h4>
+                <ol>
+                  <li>1. Comunicar los principios del gobierno de TI y acordar con el gestor ejecutivo la manera de establecer un liderazgo informado y comprometido.</li>
+                  <li>2. Establecer o delegar el establecimiento de las estructuras, procesos y prácticas del gobierno en línea con los principios de diseño acordados.</li>
+                  <li>3. Asignar responsabilidad, autoridad y la responsabilidad de que se apliquen los principios de diseños de gobierno, los modelos de toma de decisión y de delegación acordados.</li>
+                  <li>4. Garantizar que los mecanismos de notificación y de comunicación proporcionan información adecuada a aquellos con la responsabilidad de la supervisión y toma de decisiones.</li>
+                  <li>5. Orientar al personal para que siga las directrices relevantes para un comportamiento ético y profesional y garantizar que las consecuencias del no cumplimiento se conocen y se respetan.</li>
+              </ol>
+              
+              <h4> 
+                EDM01.03 Supervisar el sistema de gobierno. 
+                </h4>
+
+                <p>Supervisar la ejecución y la efectividad del gobierno de TI de la empresa. Analizar si el sistema de gobierno y los mecanismos implementados (incluyendo estructuras, principios y procesos) están operando de forma efectiva y proporcionan una supervisión apropiada de TI.</p>
+                
+                <h4>Actividades </h4>
+                <ol>
+                  <li>1. Evaluar la efectividad y rendimiento de las partes interesadas en las que se ha delegado responsabilidad y autoridad para el gobierno de TI de la empresa.</li>
+                  <li>2. Evaluar periódicamente si los mecanismos para el gobierno de TI acordados (estructuras, principios, procesos, etc.) están establecidos y operando efectivamente.</li>
+                  <li>3. Evaluar la efectividad del diseño del gobierno e identificar las acciones para rectificar cualquier desviación.</li>
+                  <li>4. Mantener la supervisión sobre el punto hasta el que TI satisface las obligaciones (regulatorias, legislación, leyes comunes, contractuales), políticas internas, estándares y directrices profesionales.</li>
+                  <li>5. Proporcionar supervisión de la efectividad de, y el cumplimiento, con el sistema de control de la empresa.</li>
+                  <li>6. Supervisar los mecanismos rutinarios y regulares para garantizar que el uso de TI cumple con las obligaciones relevantes (regulatorias, legislación, leyes comunes, contractuales), estándares y directrices.</li>
+              </ol>
+              
+
+              <!---tablas-->
+
+              <div class="mt-[50px]">
+                <table class="w-[80%] mx-auto">
+                  <tr>
+                  <th colspan="3">Activos  de información</th>
+                  <th>Activos físicos</th>
+                  <th>Activos humanos</th>
+                </tr>
+
+                <tr>
+                  <th>COD</th>
+                  <th>Manejo de información de TI</th>
+                  <th>Software</th>
+                  <th>Hardware</th>
+                  <th>Personal</th>
+
+                </tr>
+
+                <tbody>
+                  <tr>
+                    <td rowspan="4">EDM01.01</td>
+                  </tr>
+                  <tr>
+                    <td>Principios directrices del gobierno de la empresa.</td>
+                    <td></td>
+                    <td></td>
+                    <td>Gerencia <br>Personal de TI</td>
+                  </tr>
+                  <tr>
+                    <td>Modelo de toma de decisiones</td>
+                    <td></td>
+                    <td></td>
+                    <td>Gerencia <br>Personal de TI</td>
+                  </tr>
+
+                  <tr>
+                    <td>Niveles de autoridad.</td>
+                    <td></td>
+                    <td></td>
+                    <td>Gerencia <br>Personal de TI</td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+
+
+              <!--tabla 2-->
+
+              <div class="mt-[50px]">
+                <table class="w-[80%] mx-auto">
+                  <tr>
+                  <th colspan="3">Activos  de información</th>
+                  <th>Activos físicos</th>
+                  <th>Activos humanos</th>
+                </tr>
+
+                <tr>
+                  <th>COD</th>
+                  <th>Manejo de información de TI</th>
+                  <th>Software</th>
+                  <th>Hardware</th>
+                  <th>Personal</th>
+
+                </tr>
+
+                <tbody>
+                  <tr>
+                    <td rowspan="3">EDM01.02</td>
+                  </tr>
+
+                  <tr>
+                    <td>Comunicaciones del gobierno de la empresa.</td>
+                    <td></td>
+                    <td></td>
+                    <td>Gerencia <br>Personal de TI</td>
+                  </tr>
+
+                  <tr>
+                    <td>Enfoque de sistema de recompensa.</td>
+                    <td></td>
+                    <td></td>
+                    <td>Gerencia <br>Personal de TI</td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+
+              <!--tabla 3-->
+
+              <div class="mt-[50px]">
+                <table class="w-[80%] mx-auto">
+                  <tr>
+                  <th colspan="3">Activos  de información</th>
+                  <th>Activos físicos</th>
+                  <th>Activos humanos</th>
+                </tr>
+
+                <tr>
+                  <th>COD</th>
+                  <th>Manejo de información de TI</th>
+                  <th>Software</th>
+                  <th>Hardware</th>
+                  <th>Personal</th>
+
+                </tr>
+
+                <tbody>
+                  <tr>
+                    <td >EDM01.02</td>
+                    <td>Retroalimentación sobre el rendimiento y efectividad del gobierno</td>
+                    <td></td>
+                    <td></td>
+                    <td>Gerencia <br>Personal de TI</td>
+                  </tr>
+
+                  
+
+                 
+                </tbody>
+                </table>
+              </div>
+
+
+
+
+                </div>
+
+                <!--fin 4.6 -->
+
+                <!--inicio 4.7 -->
+
+                <div>
+                  <h3>4.7 Matriz de Riesgos del proceso  </h3>
+                  <div>
+                    <div class="text-center mt-[50px]">
+                      <button
+                        class="animate-bounce btn_mostrar_pdf border-2 border-white p-[10px] w-[200px] rounded-lg"
+                        id="btn_riesgo2"
+                      >
+                        Ver Matriz de Riesgo
+                        <i class="fa-regular fa-eye pl-[20px] text-[1.1rem]"></i>
+                      </button>
+                    </div>
+  
+                    <div
+                      class="flex flex-col items-center mt-[40px] pdf1"
+                      id="frame_riesgo2"
+                    >
+                      <iframe
+                        class="rounded-lg w-[80%] h-[500px]"
+                        src="Imagenes/MatrizRiesgoArnold.pdf"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <!--fin 4.7-->
 
               </div>
             </div>
+
+            <div class="border-b">
+              <button class="w-full text-left py-4 px-6 focus:outline-none" onclick="toggleAccordion1('accordion-3')">
+                  <span class="font-semibold">APO02 <br>Gestionar la Estrategia <br>Dominio: Alinear, Planificar y Organizar</span>
+                  <svg class="w-5 h-5 inline-block float-right transition-transform duration-300" id="icon-accordion-3" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+              </button>
+              <div id="accordion-3" class="hidden px-6 pb-4">
+                <!--inicio ivan-->
+                 <div>
+
+                  <!--inicio 4.1-->
+                  <div class="mt-[50px] w-[90%] mx-auto text-justify"">
+
+                    <h3 class="mt-[50px]">4.1 Descripción del proceso APO02</h3>
+                    <p class="mt-[50px]">Establecer y mantener un marco de referencia de gobierno que asegure que las actividades de TI de la empresa Distribuidora de Gas Vigil esté alineada con la estrategia general de la organización. Este proceso implica la definición, implementación, y mantenimiento de una estrategia de TI que soporte los objetivos del negocio y que, a su vez, maximice el valor de los recursos de TI. </p>
+
+                  </div>
+
+                  <!--fin 4.1-->
+
+                  <!--inicio 4.2-->
+
+                  <div class="mt-[50px] w-[90%] mx-auto text-justify">
+                    <h3 class="mt-[50px]">4.2 Declaración del propósito del sistema</h3>
+                    <p class="mt-[50px]">Asegurar que la estrategia de Tecnologías de la Información (TI) esté alineada y en sinergia con la estrategia global de la organización, facilitando así el logro de los objetivos empresariales a través de un enfoque estructurado y proactivo en la planificación, implementación y evaluación de las capacidades y recursos de TI. </p>
+                  </div>
+
+                  <!--fin 4.2 -->
+
+                  <!--inicio 4.3-->
+                  <div class="mt-[50px] w-[90%] mx-auto text-justify">
+
+                    <h3 class="mt-[50px]">4.2 Declaración del propósito del sistema</h3>
+                    <p class="mt-[50px]">Asegurar que la estrategia de Tecnologías de la Información (TI) esté alineada y en sinergia con la estrategia global de la organización, facilitando así el logro de los objetivos empresariales a través de un enfoque estructurado y proactivo en la planificación, implementación y evaluación de las capacidades y recursos de TI. </p>
+
+
+                  </div>
+                  
+
+                  <!--fin  4.3-->
+
+                  <!--inicio 4.3-->
+                  <div class="mt-[50px] w-[90%] mx-auto text-justify">
+
+                    <h3 class="mt-[50px]">4.3 Objetivos</h3>
+                    <p class="mt-[50px]">Desarrollar, implementar y mantener una estrategia de Tecnologías de la Información (TI) que esté alineada con los objetivos y metas de la organización, asegurando así que las inversiones y recursos de TI contribuyan efectivamente al éxito del negocio. </p>
+                  </div>
+
+                  <!--fin 4.3-->
+
+                  <!--inicio 4.4-->
+
+                  <div class="mt-[50px] w-[90%] mx-auto text-justify">
+ 
+                    <h3 class="mt-[50px]">4.4 Definir los indicadores </h3>
+                    <h3 class="mt-[50px]">4.4.1 Metas relacionadas con TI</h3>
+
+                    <ol class="mt-[50px]">
+                      <li>1. Alineamiento de TI y la estrategia de negocio. 	</li>
+                      <li>2. Cumplimiento y soporte de la TI al cumplimiento del negocio de las leyes y regulaciones externas.	</li>
+                      <li>3. Compromiso de la dirección ejecutiva para tomar decisiones relacionadas con TI.</li>
+                    </ol>
+
+                    <h3 class="mt-[50px]">4.4.2 Métricas</h3>
+                     <ol class="mt-[50px]">
+                      <li>-	Porcentaje de las metas y requerimientos estratégicos de la empresa soportados por las metas estratégicas para TI</li>
+                      <li>-	Nivel de satisfacción de las partes interesadas con el alcance del portafolio de programas y servicios planeados</li>
+                      <li>-	Porcentaje de los facilitadores de valor de TI mapeados con facilitadores de valor del negocio</li>
+                      <li>-	Nivel de concienciación y comprensión de las posibilidades deinnovación de TI del negocio ejecutivo</li>
+                      <li>-	Nivel de satisfacción de las partes interesadas con los niveles de experiencia e ideas de la innovación TI</li>
+                      <li>-Porcentaje de los objetivos estratégicos empresariales obtenidos como resultado de iniciativas estratégicas de TI. </li>
+                      <li>-	Número de nuevas oportunidades de negocio generadas como resultado directo de los desarrollos de TI.</li>
+                      <li>-	Número de iniciativas aprobadas resultantes de ideas innovadoras de TI</li>
+
+
+
+                     </ol>
+
+                     <div>
+                      <h3 class="mt-[50px]">4.4.3 Matriz RACI</h3>
+                      <div class="mt-[50px]">
+                        <table class="w-[90%] mx-auto">
+                          <tr>
+                            <th colspan="6">Matriz RACI</th>
+                          </tr>
+                          <tbody>
+                            <tr>
+                              <td>Practica clave del Gobierno</td>
+                              <td>Clientes</td>
+                              <td>Proveedores</td>
+                              <td>Empleados de TI</td>
+                              <td>Empleados General</td>
+                              <td>Gerente/ Propietario</td>
+                            </tr>
+      
+                            <tr>
+                              <td>
+                                APO02.01 Comprender la dirección de la empresa  
+
+                              </td>
+                              <td>R</td>
+                              <td>I</td>
+                              <td>R</td>
+                              <td>C</td>
+                              <td>I</td>
+                            </tr>
+      
+                            <tr>
+                              <td>
+                                APO02.02 Evaluar el entorno, capacidades y rendimiento actuales.   
+                              </td>
+                              <td>A</td>
+                              <td>C</td>
+                              <td>R</td>
+                              <td>C</td>
+                              <td>I</td>
+                            </tr>
+      
+                            <tr>
+                              <td>
+                                APO02.03  
+                                Definir el objetivo de las capacidades de ti  
+                                
+                              </td>
+                              <td>A</td>
+                              <td>I</td>
+                              <td>R</td>
+                              <td>I</td>
+                              <td>I</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                APO02.04 
+                                Realizar un análisis de diferencias  
+                               
+                              </td>
+                              <td>A</td>
+                              <td>I</td>
+                              <td>R</td>
+                              <td>C</td>
+                              <td>I</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                     </div>
+
+                  </div>
+
+                  <!--fin 4.4-->
+
+
+                  <!--inicio 4.5 -->
+
+                  <div>
+                    <h3 class="mt-[50px]">Entradas y salidas del proceso</h3>
+                    <div class="mt-[50px]">
+                      <table class="w-[90%] mx-auto">
+                        <th colspan="2">Entradas</th>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">Número</td>
+                            <td class="text-center">Descripción</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.01 Comprender la dirección de la empresa.
+                            </td>
+                          </tr>
+  
+                          <tr>
+                            <td>EDM04.01   </td>
+                            <td>
+                              Principios guía para la
+                              asignación de recursos y
+                              capacidades 
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>APO04.02 </td>
+                            <td>Oportunidades de
+                              innovación vinculadas
+                              con los motivadores de la
+                              industria</td>
+                          </tr>
+
+                          <tr>
+                            <td>Externo a
+                              COBIT </td>
+                            <td>Estrategia y análisis de
+                              las fortalezas, debilidades,
+                              oportunidades, amenazas
+                              de la empresa (DAFO)</td>
+                          </tr>
+
+                   
+  
+
+  
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.02 Evaluar el entorno, capacidades y rendimiento actuales.
+                            </td>
+                          </tr>
+  
+                          <tr>
+                            <td>APO06.05 </td>
+                            <td>Oportunidades de
+                              optimización de costes</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO08.05 </td>
+                            <td>Definición de proyectos de
+                              mejoras potenciales</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO09.01</td>
+                            <td>Identificar diferencias en
+                              los servicios de TI para el
+                              negocio</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO09.04 </td>
+                            <td>Planes de acciones de
+                              mejora y remediaciones</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO12.01</td>
+                            <td>Nuevos problemas y
+                              factores de riesgo</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO12.03 </td>
+                            <td>Perfil de riesgo agregado,
+                              incluyendo el estado de las
+                              acciones sobre la gestión
+                              de riesgos</td>
+                          </tr>
+                          <tr>
+                            <td>APO12.05 </td>
+                            <td>Propuestas de proyecto
+                              para la reducción de
+                              riesgos</td>
+                          </tr>
+
+                          <tr>
+                            <td>BAI04.03 </td>
+                            <td> Planes de rendimiento y
+                              capacidad
+                          <br> Mejoras priorizadas</td>
+                          </tr>
+
+                          <tr>
+                            <td>BAI04.05 </td>
+                            <td>Acciones correctivas</td>
+                          </tr>
+
+                          <tr>
+                            <td>BAI09.01 </td>
+                            <td>Revisión de los resultados
+                              de ajuste a objetivos</td>
+                          </tr>
+
+                          <tr>
+                            <td>BAI09.04 </td>
+
+                            <td>Oportunidades para
+                              reducir los costes de los
+                              activos o incrementar
+                              su valor<br>
+                              Revisión de los resultados de la optimización de costes
+
+                          </td>
+
+                          </tr>
+  
+                          
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.03 Definir el objetivo de las capacidades de TI.
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>APO04.05 </td>
+                            <td>Análisis de las iniciativas rechazadas <br> Resultados  y recomendaciones de las iniciativas de pruebas de concepto.</td>
+                          </tr>
+
+
+
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.03 Realizar un análisis de diferencias. 
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>EDM02.01 </td>
+                            <td>Evaluación de la alineación
+                              estratégica</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO04.06 </td>
+                            <td>Evaluaciones sobre el uso
+                              de enfoques innovadores</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO05.02 </td>
+                            <td>Expectativas sobre el
+                              retorno de inversión</td>
+                          </tr>
+
+                          <tr>
+                            <td>BAI01.05</td>
+                            <td>Resultados del programa
+                              de supervisión de
+                              consecución de objetivos</td>
+                          </tr>
+
+                          <tr>
+                            <td>BAI01.06 </td>
+                            <td>Revisión de los resultados
+                              de cambios de fase (stage-
+                              gate)</td>
+                          </tr>
+
+                          <tr>
+                            <td>AI01.13 </td>
+                            <td>Resultados de la revisión
+                              post-implementación</td>
+                          </tr>
+                      
+
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.05 Definir el plan estratégico y la hoja de ruta. 
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>EDM04.01 </td>
+                            <td>Plan de recursos aprobado </td>
+                          </tr>
+
+                          <tr>
+                            <td>EDM04.03 </td>
+                            <td> Realimentación sobre
+                              la asignación y eficacia
+                              de los recursos y
+                              capacidades<br>
+                              • Acciones correctivas
+                              para gestionar las
+                              desviaciones en la
+                              gestión de recursos</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO03.01 </td>
+                            <td>• Alcance definido de la
+                              arquitectura <br>
+                              • Caso de negocio
+                              conceptual de la
+                              arquitectura y propuesta
+                              de valor</td>
+
+                          </tr>
+
+                          <tr>
+                            <td>APO03.02</td>
+                            <td>Modelo de arquitectura de
+                              la información</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO03.03 </td>
+                            <td> Arquitecturas de
+                              transición <br>
+                              • Implementación a alto
+                              nivel y estrategias de
+                              migración</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO05.01 </td>
+                            <td>Realimentación sobre las
+                              estrategias y objetivos</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO05.02 </td>
+                            <td>Opciones de financiación</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO06.02 </td>
+                            <td>Asignaciones
+                              presupuestarias</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO06.03 </td>
+                            <td> Plan y presupuesto de TI
+                              <br>Comunicación del
+                              presupuesto</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO13.02 </td>
+                            <td>Casos de negocio de
+                              la seguridad de la
+                              información</td>
+                          </tr>
+
+                          <tr>
+                            <td>BAI09.05 </td>
+                            <td>Plan de acción para
+                              ajustar las cantidades y
+                              asignación de licencias</td>
+                          </tr>
+
+                          <tr>
+                            <td>DSS04.02 </td>
+                            <td>Aprobación de las
+                              opciones estratégicas</td>
+                          </tr>
+
+
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.06 Comunicar la estrategia y la dirección de TI.
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>EDM04.02 </td>
+                            <td>Comunicación de las estrategias de los recursos.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                    <div class="mt-[50px]">
+                      <table class="w-[90%] mx-auto">
+                        <th colspan="2">Salidas</th>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">Número</td>
+                            <td class="text-center">Descripción</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.01 Comprender la dirección de la empresa.
+                            </td>
+                          </tr>
+    
+                          <tr>
+                            <td>
+                              Interno
+                            </td>
+                            <td>Fuentes y prioridades para
+                              cambios</td>
+                          </tr>
+    
+                          
+  
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.02 Evaluar el entorno, capacidades y
+                                rendimiento actuales.
+                            </td>
+                          </tr>
+    
+                          <tr>
+                            <td>Interno</td>
+                            <td>Línea de referencia de
+                              capacidades actuales</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO12.01</td>
+                            <td>Diferencias y riesgos
+                              relacionados con las
+                              capacidades actuales</td>
+                          </tr>
+
+                          <tr>
+                            <td>Interno</td>
+                            <td>Análisis DAFO de
+                              capacidades’</td>
+                          </tr>
+    
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.03 Definir el objetivo de las capacidades de TI.
+                            </td>
+                          </tr>
+    
+                          <tr>
+                            <td>
+                             Interno
+                            </td>
+                            <td>Objetivos de TI a alto nivel</td>
+                          </tr>
+
+                          <tr>
+                            <td>Interno</td>
+                            <td>equerimientos del
+                              negocio y capacidades
+                              de TI</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO03.03</td>
+                            <td>Propuesta de cambio en la
+                              arquitectura del negocio</td>
+                          </tr>
+    
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.04 Realizar un análisis de diferencias.
+                            </td>
+                          </tr>
+    
+                          <tr>
+                           <td>EDM04.01 <br>
+                            APO13.02 <br>
+                            BAI03.11</td>
+
+                            <td>Diferencias y cambios
+                              requeridos para alcanzar la
+                              meta de capacidad</td>
+                          </tr>
+    
+                          <tr>
+                            <td>BAI03.11</td>
+                            <td>Declaración del valor beneficio para el entorno deseado.</td>
+                          </tr>
+    
+
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.05  Definir el plan estratégico y la hoja de ruta..
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>APO05.01</td>
+                            <td>Definición de iniciativas
+                              estratégicas</td>
+                          </tr>
+
+                          <tr>
+                            <td>APO05.01m<br>
+                              APO12.01</td>
+
+                              <td>Evaluación de riesgo </td>
+                          </tr>
+
+                          <tr>
+                            <td>EDM02.01 <br>
+                              APO01.03 <br>
+                              APO03.01 <br>
+                              APO05.01 <br>
+                              APO08.01</td>
+
+                              <td>Hoja de ruta estratégica </td>
+                          </tr>
+
+
+                          <tr>
+                            <td colspan="2" class="bg-[#EC9544] text-center">
+                              APO02.06 Comunicar la estrategia y la dirección de TI.
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>Interno</td>
+                            <td>Plan de comunicación </td>
+                          </tr>
+
+                          <tr>
+                            <td>Todo APO <br>
+                              Todo BAI <br>
+                              Todo DSS<br>
+                              Todo MEA</td>
+
+                              <td>Paquete de comunicación </td>
+                          </tr>
+
+                         
+    
+                          
+                        </tbody>
+                      </table>
+                    </div>
+    
+
+
+
+  
+                    
+                  </div>
+
+                  <!--fin 4.5 -->
+
+                  <!--inicio 4.6-->
+
+                  <div class="w-[90%] mx-auto text-justify">
+                    <h3 class="mt-[50px]">4.6 Definir las actividades de cada práctica asociada al proceso </h3>
+                    <h3 class="mt-[50px] mb-[50px]">
+                      APO02.01 Comprender la dirección de la empresa.
+                      
+                       </h3>
+                    <p>Considerar el entorno actual y los procesos de negociode la empresa, así como la estrategia y los objetivos futuros de la compañía. Tomar también en cuenta el entorno externo a ella (motivadores de la industria)</p>
+                     <h3 class="mt-[50px]">Actividades</h3>
+                   
+                     
+                     <ol type="1" class="mt-[50px]">
+                      <li>1. Desarrollar y mantener un entendimiento de las estrategias y objetivos del negocio, así como del entorno y los retos operativos actuales.</li>
+                      <li>2. Desarrollar y mantener un entendimiento del entorno externo a la empresa.</li>
+                      <li>3. Identificar las partes interesadas más importantes y obtener comprensión de sus requerimientos.</li>
+                      <li>4. Identificar y analizar las fuentes de los cambios en la empresa y en el entorno externo.</li>
+                      <li>5. Determinar prioridades para el cambio estratégico.</li>
+                      <li>6. Entender la actual arquitectura de empresa y trabajar con el proceso de arquitectura de empresa para determinar cualquier brecha potencial en la arquitectura.</li>
+                    </ol>
+                    
+
+
+                        <h3 class="mt-[50px]">PO02.02 Evaluar el entorno, capacidades y
+                          rendimiento actuales.
+                           </h3>
+
+                        <h3 class="mt-[50px]">Actividades </h3>
+
+                        <ol type="1" class="mt-[50px]">
+                          <li>1. Desarrollar un punto de referencia del negocio, entorno de TI, capacidades y servicios actuales respecto al que las necesidades futuras puedan ser comparadas. Incluir el correspondiente detalle, a alto nivel, de la arquitectura empresarial actual (negocios, información, datos, aplicaciones y dominios de tecnología), procesos de negocio, procesos de TI y sus procedimientos, estructura organizativa de TI, provisión de servicios externos.</li>
+                          <li>2. Identificar los actuales y potenciales riesgos y tecnologías en declive.</li>
+                          <li>3. Identificar diferencias entre el negocio actual y las capacidades de TI, entre servicios y estándares y mejores prácticas de referencia, entre empresas competidoras y sus capacidades de TI y entre un análisis comparativo de las mejoras prácticas y la provisión de servicios emergentes de TI.</li>
+                          <li>4. Identificar los problemas, fortalezas, oportunidades y amenazas en el entorno actual, las capacidades y servicios para entender el desempeño actual.</li>
+                        </ol>
+                        
+
+
+
+                        <h3 class="mt-[50px] mb-[50px]">APO02.03 Definir el objetivo de las capacidades de TI. </h3>
+
+                        <h3>Actividades </h3>
+
+                        <ol type="1" class="mt-[50px]">
+                          <li>1. Considerar la aprobación de tecnologías emergentes e ideas innovadoras.</li>
+                          <li>2. Identificar las amenazas por el rechazo a las actuales y nuevas tecnologías adquiridas.</li>
+                          <li>3. Definir los objetivos/metas de TI a alto nivel y cómo contribuirán a los objetivos de negocio empresariales.</li>
+                          <li>4. Definir el proceso de negocio requerido y deseado, las capacidades y los servicios de TI; describir los cambios a alto nivel en la arquitectura empresarial (negocio, información, datos, aplicaciones y dominios tecnológicos), el negocio, los procesos y procedimientos de TI, la estructura.</li>
+                        </ol>
+                        
+                        <h3 class="mt-[50px]">APO02.04 Realizar un análisis de diferencias.</h3>
+                        <h3 class="mt-[50px]">Actividades</h3>
+                        <ol class="mt-[50px]">
+                          <li>1.	Identificar todas las diferencias y cambios necesarios para realizar en el entorno deseado.</li>
+                          <li>2.	Considerar las implicaciones a alto nivel de todas las diferencias. Considerar el valor de los posibles cambios en el negocio y capacidades de TI.</li>
+                        </ol>
+
+                        <h3 class="mt-[50px]">APO02.05 Definir el plan estratégico y la hoja de ruta.</h3>
+
+                        <ol type="1" class="mt-[50px]">
+                          <li>Definir las iniciativas necesarias para cerrar las diferencias y migrar del entorno actual al deseado, incluyendo el presupuesto de inversión/operativo, fuentes de financiación y estrategia de provisión.</li>
+                          <li>Identificar y abordar adecuadamente los riesgos, costes e implicaciones de los cambios organizativos, evolución tecnológica, requisitos normativos, reingeniería de los procesos de negocio, dotación de personal, oportunidades de internalización (insourcing) y externalización (outsourcing), etc., en el proceso de planificación.</li>
+                          <li>Determinar dependencias, solapamientos, sinergias e impactos entre las iniciativas y priorizar las iniciativas.</li>
+                        </ol>
+                        
+
+
+                        <!--tabla1-->
+
+                        <div class="mt-[50px]">
+                          <table class="w-[80%] mx-auto">
+                            <tr>
+                            <th colspan="3">Activos  de información</th>
+                            <th>Activos físicos</th>
+                            <th>Activos humanos</th>
+                          </tr>
+          
+                          <tr>
+                            <th>COD</th>
+                            <th>Manejo de información de TI</th>
+                            <th>Software</th>
+                            <th>Hardware</th>
+                            <th>Personal</th>
+          
+                          </tr>
+          
+                          <tbody>
+                            <tr>
+                              <td rowspan="2">APO02.01</td>
+                            </tr>
+                            <tr>
+                              <td>Evaluación de Necesidades de Información<br>Desarrollo de una Estrategia de Información</td>
+                              <td>Infraestructura de servidores</td>
+                              <td></td>
+                              <td>Personal de TI</td>
+                            </tr>
+                            
+                          </tbody>
+                          </table>
+                        </div>
+          
+
+                        <!--tabla 2-->
+
+                        <div class="mt-[50px]">
+                          <table class="w-[80%] mx-auto">
+                            <tr>
+                            <th colspan="3">Activos  de información</th>
+                            <th>Activos físicos</th>
+                            <th>Activos humanos</th>
+                          </tr>
+          
+                          <tr>
+                            <th>COD</th>
+                            <th>Manejo de información de TI</th>
+                            <th>Software</th>
+                            <th>Hardware</th>
+                            <th>Personal</th>
+          
+                          </tr>
+          
+                          <tbody>
+                            <tr>
+                              <td rowspan="2">APO02.02</td>
+                            </tr>
+                            <tr>
+                              <td>Inventario de Hardware y Software <br>Evaluación del Ciclo de Vida</td>
+                              <td>Infraestructura de Servidores</td>
+                              <td></td>
+                              <td>Administrador de TI</td>
+                            </tr>
+                        
+                          </tbody>
+                          </table>
+                        </div>
+
+                        <!--tabla 3-->
+
+
+                        <div class="mt-[50px]">
+                          <table class="w-[80%] mx-auto">
+                            <tr>
+                            <th colspan="3">Activos  de información</th>
+                            <th>Activos físicos</th>
+                            <th>Activos humanos</th>
+                          </tr>
+          
+                          <tr>
+                            <th>COD</th>
+                            <th>Manejo de información de TI</th>
+                            <th>Software</th>
+                            <th>Hardware</th>
+                            <th>Personal</th>
+          
+                          </tr>
+          
+                          <tbody>
+                            <tr>
+                              <td rowspan="2">APO02.03</td>
+                            </tr>
+                            <tr>
+                              <td>Visión de Infraestructura de TI Futura <br>
+                                Modelo de Datos y Gestión de la Información <br>
+                                Diseño de Políticas de Seguridad de Información
+                                </td>
+                              <td></td>
+                              <td></td>
+                              <td>Personal de TI</td>
+                            </tr>
+                           
+          
+                          </tbody>
+                          </table>
+                        </div>
+
+
+
+                        <div class="mt-[50px]">
+                          <table class="w-[80%] mx-auto">
+                            <tr>
+                            <th colspan="3">Activos  de información</th>
+                            <th>Activos físicos</th>
+                            <th>Activos humanos</th>
+                          </tr>
+          
+                          <tr>
+                            <th>COD</th>
+                            <th>Manejo de información de TI</th>
+                            <th>Software</th>
+                            <th>Hardware</th>
+                            <th>Personal</th>
+          
+                          </tr>
+          
+                          <tbody>
+                            <tr>
+                              <td rowspan="2">APO02.04</td>
+                            </tr>
+                            <tr>
+                              <td> Identificación de Brechas de Capacidades y Recursos <br>
+                                Evaluación de Seguridad y Privacidad <br>
+                                Asignación de Recursos y Responsabilidades <br>
+                                Establecimiento de Indicadores de Desempeño<br>
+                                
+                                </td>
+                              <td></td>
+                              <td></td>
+                              <td>Gerente de TI</td>
+                            </tr>
+                           
+          
+                          </tbody>
+                          </table>
+                        </div>
+
+
+
+                  </div>
+
+                  <!--fin 4.6 -->
+
+                  <!--inicio 4.7 -->
+
+                  <div>
+                    <div class="text-center mt-[50px]">
+                      <button
+                        class="animate-bounce btn_mostrar_pdf border-2 border-white p-[10px] w-[200px] rounded-lg"
+                        id="btn_riesgo3"
+                      >
+                        Ver Matriz de Riesgo
+                        <i class="fa-regular fa-eye pl-[20px] text-[1.1rem]"></i>
+                      </button>
+                    </div>
+  
+                    <div
+                      class="flex flex-col items-center mt-[40px] pdf1"
+                      id="frame_riesgo3"
+                    >
+                      <iframe
+                        class="rounded-lg w-[80%] h-[500px]"
+                        src="Imagenes/MatrizRiesgosIvan.pdf"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+
+                  </div>
+
+
+                  <!--fin 4.7 -->
+
+
+                  <!--inicio 4.8 -->
+
+                  <div class="politicas mt-[100px] mx-auto w-[90%] text-justify">
+
+                    <h3>4.8 Políticas del plan de mejora  </h3>
+                    <h4>4.8.1 Políticas a implementar</h4>
+                    <h4>Política de Revisión de la Estrategia </h4>
+                    <h4>Objetivo</h4>
+                    <p>Es asegurar que la organización pueda ajustar y adaptar su dirección estratégica en función de los cambios internos y externos, mejorando su capacidad para lograr sus objetivos a largo plazo. Entre los objetivos específicos de esta política se encuentran:</p>
+                     <h4>Alcance</h4>
+                    <p>El alcance de la política de revisión de la estrategia debe definir las áreas o elementos clave de la estrategia que serán objeto de revisión y evaluación. Esto puede incluir <br>
+                      ·	Ámbito organizacional: Toda la estrategia de la organización o bien áreas específicas (finanzas, marketing, recursos humanos, operaciones, etc.). <br>
+                      ·	Frecuencia de la revisión: Se debe definir si la revisión será anual, trimestral, semestral, o en momentos específicos del ciclo de vida de la organización. 
+                      </p>
+
+                  <h4>Lineamientos</h4>
+                  <p>La misión, visión y valores de la organización: La estrategia no debe desvincularse de los principios fundamentales que guían a la organización. <br>
+                    Los objetivos de largo plazo: Asegurar que las estrategias revisadas sigan contribuyendo al logro de los objetivos estratégicos definidos en la planificación a largo plazo. <br>
+                    El entorno externo: Considerar cambios económicos, tecnológicos, sociales y competitivos que puedan influir en la viabilidad de la estrategia. <br>
+                  </p>
+
+                  <h4>Herramientas</h4>
+
+                  <p >Software de gestión de estrategias (Balanced Scorecard).  <br>
+                    	Reportes trimestrales de desempeño estratégico. <br>
+                    Reuniones interdepartamentales.
+                    </p>
+
+                    <h4>Política de Consultoría Estratégica Externa</h4>
+                    <h4>Objetivo</h4>
+                    <p>La estrategia corporativa de Distribuidora Gas Vigil se mantenga alineada con las mejores prácticas del sector, responda de manera proactiva a las dinámicas del mercado y aproveche los avances tecnológicos, para consolidar una posición competitiva a largo plazo.</p>
+                    <h4>Alcance</h4>
+                    <p>Esta política aplica a la alta dirección y al equipo estratégico de Distribuidora Gas Vigil, incluyendo todas las áreas involucradas en la toma de decisiones estratégicas, desarrollo de productos, y adaptación a cambios del entorno.</p>
+                    <h4>Lineamientos</h4>
+                    <p>El desarrollo de esta política se realizará de la siguiente manera: <br> 
+                      ·	Contratación de Servicios de Consultoría Estratégica Externa <br>
+                      ·	Análisis de Tendencias de Mercado y Tecnológicas <br>
+                      ·	Implementación de Recomendaciones Estratégicas <br>
+                      ·	Transferencia de Conocimiento
+                       </p>
+
+                       <h4>Herramientas</h4>
+                       <p>•	Consultoría Estratégica Externa de Alto Nivel <br>
+                        •	Plan de Implementación y Seguimiento <br>
+                        ·	Capacitación y Transferencia de Conocimiento
+                        </p>
+
+
+
+                      <div>
+                        <h3>4.8.2 Beneficios/Costos Que Obtendría Con La Implementación Del Modelo Gobierno Y Gestión De TI. </h3>
+                        <h4>Beneficios</h4>
+                        <ol>
+                          <li>1. 	Alineación de la estrategia de TI con los objetivos de negocio. </li>
+                          <li>2. 	Mejora en la toma de decisiones estratégicas mediante información más clara y relevante. </li>
+                          <li>3.  Identificación temprana de riesgos estratégicos y oportunidades de negocio. </li>
+                          <li>4.Incremento en la capacidad de respuesta a los cambios del mercado o del entorno empresarial.  </li>
+                          <li>5. 	Mejor comunicación entre los equipos de TI y las áreas de negocio. </li>
+                          <li>6.Aseguramiento de que las inversiones en TI generen valor para la empresa.   </li>
+                        </ol>
+                      </div>
+
+                      <h4>Costo</h4>
+                      <div>
+                        <table>
+                          <th>Humano</th>
+                          <th>Otros</th>
+                          <th>Software</th>
+                          <th>Hardware</th>
+                          <tbody>
+                            <tr>
+                              <td>Consultores estratégicos: $300 </td>
+                              <td>Manuales y guías: $50 </td>
+                              <td>Herramienta de Gestión Estratégica: $600</td>
+                              <td>Servidores de análisis: $200</td>
+                            </tr>
+                            <tr>
+                              <td>Personal del área de Planeación: $200 </td>
+                              <td>Energía: $40 </td>
+                              <td>Software de Gestión de Proyectos: $400</td>
+                              <td>Computadora para planificación: $500 </td>
+
+                            </tr>
+
+                            <tr>
+                              <td></td>
+                              <td>Internet: $35 </td>
+                              <td>Antivirus: $85 </td>
+                              <td>Monitor de administración extra:$300</td>
+                            </tr>
+
+                            <tr>
+                              <td>$500</td>
+                              <td>$125</td>
+                              <td>$1085</td>
+                              <td>$1000</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4" class="text-center">$2,710</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+              
+                  </div>
+
+                  <!--fin 4.8 -->
+
+            
+
+                 </div>
+
+                 <!--fin ivan-->
+                
+              </div>
+          </div>
 
 
 
