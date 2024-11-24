@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
     <link rel="stylesheet" href="styles.css" />
 
     <title>Capitulo IV</title>
@@ -111,7 +113,7 @@
 </section>
 
 
-    <section class="mt-[120px] text-white seccion1 ">
+    <section class="mt-[120px] text-white seccion1 " data-aos="fade-right" data-aos-duration="2000">
       <div class="divTitulo">
       <h3 class="titulo_capitulo">CAPITULO IV. PROPUESTA DE IMPLEMENTACIÓN DE PROCESOS</h3>
     </div>
@@ -265,12 +267,12 @@
         </div>
       </div>
 
-      <div>
+      <div data-aos="fade-right" data-aos-duration="2000">
         <div
           class="w-[80%] mx-auto text-white border-2 border-white rounded-lg mt-[50px]"
         >
           <div class="shadow rounded-lg">
-            <div class="border-b">
+            <div class="border-b" >
               <button
                 class="w-full text-left py-4 px-6 focus:outline-none"
                 onclick="toggleAccordion1('accordion-1')"
@@ -2645,5 +2647,9 @@
     </section>
 
     <script src="capitulo4.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -60,7 +60,7 @@ const button = document.getElementById('mostrar_pdf1');
 const pdfContainer = document.getElementById('divFrame1');
       
       button.addEventListener('click', ()=>{
-         alert('mostrandopdf')
+       
  
          mostrarPDF(pdfContainer)
         

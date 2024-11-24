@@ -6,6 +6,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Capitulo II</title>
 
   </head>
@@ -79,6 +81,7 @@
 
     <section
       class=" seccion1 mt-[50px] text-white flex flex-col justify-center items-center"
+      data-aos="fade-right" data-aos-duration="2000"
     >
       <p class="text-[2rem] text-white text-center">
         Capitulo II <br />
@@ -87,7 +90,7 @@
     </section>
 
 
-    <div class="w-[80%] text-[1.4rem] mx-auto text-white border-2 border-white rounded-lg mt-[50px]">
+    <div class="w-[80%] text-[1.4rem] mx-auto text-white border-2 border-white rounded-lg mt-[50px]" data-aos="fade-right" data-aos-duration="2000">
       <div class=" shadow rounded-lg">
           <div class="border-b">
               <button class="w-full text-left py-4 px-6 focus:outline-none" onclick="toggleAccordion1('accordion-1')">
@@ -271,7 +274,7 @@
 
     
 
-    <section class="text-white mt-[100px] flex flex-col items-center">
+    <section class="text-white mt-[100px] flex flex-col items-center" data-aos="fade-right" data-aos-duration="2000">
       <p class="text-[1.5rem] text-white text-center">
         2.4 MODELO DE GOBIERNO DE COBIT 5.0.
       </p>
@@ -296,7 +299,7 @@
 
 
 
-    <div class="w-[80%] text-[1.4rem] mx-auto text-white border-2 border-white rounded-lg mt-[50px]">
+    <div class="w-[80%] text-[1.4rem] mx-auto text-white border-2 border-white rounded-lg mt-[50px]" data-aos="fade-right" data-aos-duration="2000">
       <div class=" shadow rounded-lg">
           <div class="border-b">
               <button class="w-full text-left py-4 px-6 focus:outline-none" onclick="toggleAccordion1('accordion-4')">
@@ -376,5 +379,9 @@
   </main>
 
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
