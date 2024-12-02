@@ -22,12 +22,20 @@ body{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('Imagenes/fondo.jpg');
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
    
 
    
     
 }
 
+.footer{
+    position: relative;
+    bottom: 0;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
 .hamburguer {
     position: sticky; 
 
