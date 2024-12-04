@@ -73,6 +73,13 @@
         .marco img{
           transition: all .3s ease-in-out;
         }
+
+        @media (max-width:767px){
+          body .table-container{
+            max-width: 100%;
+            overflow-x: auto;
+          }
+        }
     </style>
   </head>
   <body>
@@ -592,7 +599,7 @@
       
           </div>
           
-          <div class="mt-[50px]">
+          <div class="mt-[50px] table-container">
             <table class="rounded-lg w-[80%]">
               <tbody>
                 <tr>
@@ -761,7 +768,7 @@
         </div>
       </section>
 
-      <section data-aos="fade-up" data-aos-duration="2000">
+      <section data-aos="fade-up" data-aos-duration="2000"  >
         <h3>3.9 Obteniendo los procesos habilitantes como resultado de cruzarlos con las metas de TI</h3>
         <div class="text-center mt-[50px]">
           <button class="animate-bounce     btn_mostrar_pdf border-2 border-white p-[10px] w-[200px] rounded-lg" id="mostrar_pdf4" >Ver PDF <i class="fa-regular fa-eye pl-[20px] text-[1.1rem]"></i></button>
@@ -774,8 +781,8 @@
     
         </div>
 
-        <div class="w-[50%] mx-auto mt-[100px]">
-          <table>
+        <div class=" mx-auto mt-[100px] table-container  sm:w-[100%]">
+          <table class="w-[80%] mx-auto">
             <th>ID</th>
             <th>Procesos</th>
             <th>Puntaje</th>

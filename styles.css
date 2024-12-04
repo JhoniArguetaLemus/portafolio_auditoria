@@ -12,12 +12,9 @@
     --color-gris: #9CA3AF;
     --color-rojo: #EF4444;
     --color-blanco: #FFFFFF;
-
-}
-
-* {
     scrollbar-width: 18px; 
     scrollbar-color: var(--color-primario) black; 
+
 }
 
 
