@@ -123,3 +123,5 @@ function toggleAccordion1(id) {
    content.classList.toggle('hidden');
    icon.classList.toggle('rotate-180');
 }
+
+
